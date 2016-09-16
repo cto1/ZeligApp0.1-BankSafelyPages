@@ -1,0 +1,2061 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Multistep | CustomerIQ</title>
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+    <link href="css/jquery.steps.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="multistep-header">
+            <img src="img/safebank-logo.png">
+        </div>
+        <div class="content">
+            <div id="wizard">
+                <div class="step-heading text-center">
+                    <h1>Business Current Account Application</h1>
+                </div>
+                <h2><span>Application</span> <span>Terms</span></h2>
+                <section>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="step-heading text-center">
+                                <h3>Application Terms</h3>
+                                <br>
+                                <p>This is stage 1 of 5. Required fields are indicated with an asterisk (<span class="red">*</span>).
+                                    Please do not use your browser's 'back' button to move back or you may lose some of the information you have already entered.</p>
+                                <br>
+                                <h4>Thank you for choosing a Safe Bank Business Account.</h4>
+                                <br>
+                            </div>
+                            <strong>Please read the information below before proceeding to apply</strong>
+                            <br>
+
+                            <br>
+                            <p>It will take you approx. 20 minutes to fill this application out.</p>
+                            <p>The following application is for New Business Banking Customers only - if you wish to
+                                open a new account for an existing Business Account please contact - call DIRECT BANKING
+                                FOR BUSINESS 0300 8002230.</p>
+                            <p>We will ask you for information on all parties (where necessary) and your business therefore
+                                please have this to hand as you are unable to save part way through. Information that will
+                                be required for all parties on the account, Full name, Address & Date of entry, Previous
+                                Address if less than 3 years. Date of Birth & Country of Birth, years of experience in this role.</p>
+                            <p>Please ensure you complete accurately as incorrect information may delay your application.</p>
+                            <p>You will receive a phone call/email from one of our Business Specialists in order to
+                                confirm the information submitted and ensure we fully understand what your business is about
+                                and how we can support.</p>
+                            <p>We will then post or email your documents for signing. If we require ID you will need to visit one of our branches.</p>
+                            <p>Once we receive your signed application, assuming all ok, we will open the account and advise you of your account number.</p>
+                        </div>
+                    </div>
+                </section>
+                <h2><span>Business</span> <span>Details</span></h2>
+                <section>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="step-heading text-center">
+                                <h3>Business Details</h3>
+                                <br>
+                                <p>This is stage 1 of 5. Required fields are indicated with an asterisk (<span class="red">*</span>). Please do not use your browser's 'back' button to move back or you may lose some of the information you have already entered.</p>
+                                <br>
+                            </div>
+
+                            <form class="form-horizontal" role="form" id="businessDetails">
+                                <div class="form-group">
+                                    <label for="compType" class="col-sm-5 control-label">Please specify what type of Limited Company the business is.</label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="compType">
+                                            <option value="Not Selected">Select</option>
+                                            <option value="Private Company Limited by shares" selected>Private Company
+                                                Limited by shares</option>
+                                            <option value="Private Company Limited by Guarantee">Private Company Limited by Guarantee</option>
+                                            <option value="Subsidiary of a Listed Company">Subsidiary of a Listed Company</option>
+                                            <option value="Subsidiary of a Regulated Financial Institution">Subsidiary of a Regulated Financial Institution</option>
+                                            <option value="Regulated EU or Equivalent Country Financial Services Firms">Regulated EU or Equivalent Country Financial Services Firms</option>
+                                            <option value="Community Interest Company">Community Interest Company</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="orgName" class="col-sm-5 control-label">Business /Organisation name<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="orgName" value="Above Tech Ltd" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="orgPhone" class="col-sm-5 control-label">Business/organisation telephone number<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="orgPhone" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="orgEmail" class="col-sm-5 control-label">Business/organisation e-mail address<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="orgEmail" value="john@above.com" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="orgMobPhone" class="col-sm-5 control-label">Mobile number<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="orgMobPhone" value="07821 828 990" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="compRegNumber" class="col-sm-5 control-label">Companies House registration number<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="compRegNumber" value="09256632" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="buildingNameNumber" class="col-sm-5 control-label">Building name/number<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="buildingNameNumber" value="41" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="streetName" class="col-sm-5 control-label">Street<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="streetName" value="Ranoch road" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="townCityName" class="col-sm-5 control-label">Town /City<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="townCityName" value="London" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="countryStateName" class="col-sm-5 control-label">County/State</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="countryStateName">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="countryName" class="col-sm-5 control-label">Country</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="countryName">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="postCoode" class="col-sm-5 control-label">Post Code<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="postCoode" value="W6 9SU" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tradingName" class="col-sm-5 control-label">Trading Name and/or any other aliases<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="tradingName" value="Above Tech" required>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="step-heading text-center">
+                                    <h4>Trading Address</h4>
+                                    <br>
+                                </div>
+                                <div class="form-group">
+                                    <label for="diffTradingAddress" class="col-sm-5 control-label">Is your trading address different from your registered address?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="diffTradingAddress"
+                                                onchange="diffAddress(this);">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="diff-address">
+                                    <strong>If 'Yes' please provide details</strong>
+                                    <br>
+                                    <br>
+                                    <div class="form-group">
+                                        <label for="buildingNameNumber1" class="col-sm-5 control-label">Building name/number<span class="red">*</span></label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="buildingNameNumber1" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="streetName1" class="col-sm-5 control-label">Street<span class="red">*</span></label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="streetName1" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="townCityName1" class="col-sm-5 control-label">Town /City<span class="red">*</span></label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="townCityName1" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="countryStateName1" class="col-sm-5 control-label">County/State</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="countryStateName1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="countryName1" class="col-sm-5 control-label">Country</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="countryName1">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="postCoode1" class="col-sm-5 control-label">Post Code<span class="red">*</span></label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="postCoode1" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="step-heading text-center">
+                                    <h4>Statement and Correspondence Address</h4>
+                                    <br>
+                                </div>
+                                <div class="form-group">
+                                    <label for="contactName" class="col-sm-5 control-label">Contact name/department for correspondence</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="contactName">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="sendAddress" class="col-sm-5 control-label">What address would you like your statements and correspondence sent to?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="sendAddress" onchange="sendtoAddress(this);">
+                                            <option value="Not Selected">Select</option>
+                                            <option value="Registered Address">Registered Address</option>
+                                            <option value="Trading Address">Trading Address</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="send-address">
+                                    <strong>If 'Other' please provide details</strong>
+                                    <br>
+                                    <br>
+                                    <div class="form-group">
+                                        <label for="buildingNameNumber2" class="col-sm-5 control-label">Building
+                                            name/number<span class="red">*</span></label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="buildingNameNumber2" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="streetName2" class="col-sm-5 control-label">Street<span
+                                                class="red">*</span></label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="streetName2" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="townCityName2" class="col-sm-5 control-label">Town /City<span
+                                                class="red">*</span></label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="townCityName2" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="countryStateName2" class="col-sm-5 control-label">County
+                                            /State</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="countryStateName2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="countryName2" class="col-sm-5 control-label">Country</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="countryName2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="postCoode2" class="col-sm-5 control-label">Post Code<span
+                                                class="red">*</span></label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="postCoode2" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <h2><span>Additional</span> <span>Details</span></h2>
+                <section>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="step-heading text-center">
+                                <h3>Business Additional details</h3>
+                                <br>
+                                <p>This is stage 1 of 5. Required fields are indicated with an asterisk (<span class="red">*</span>). Please do not use your browser's 'back' button to move back or you may lose some of the information you have already entered.</p>
+                                <br>
+                            </div>
+                            <form class="form-horizontal" role="form" id="additionalDetails">
+                                <div class="form-group">
+                                    <label for="bizType" class="col-sm-5 control-label">Is your business a start-up or and
+                                        existing entity?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="bizType">
+                                            <option value="Not Selected">Select</option>
+                                            <option value="Start up">Start up</option>
+                                            <option value="Existing">Existing</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="bizPremises" class="col-sm-5 control-label">Is your business premises owned or
+                                        leased?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="bizPremises">
+                                            <option value="Not Selected">Select</option>
+                                            <option value="Owned">Owned</option>
+                                            <option value="leased">leased</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="bizFranchise" class="col-sm-5 control-label" data-trigger="hover focus"
+                                           data-toggle="tooltip" data-placement="top" title="A franchise is a business where certain rights or licences have been bought from a 'franchisor' who sells the right to use their business idea/model under their trading name. Some examples are: McDonalds / Subway.">Is your business a franchise?<span class="red">*</span>
+                                        <i class="fa fa-info-circle red popoverIcon" ></i>
+                                    </label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="bizFranchise" onchange="isFran(this);">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="franchise-type">
+                                    <div class="form-group">
+                                        <label for="franchiseType" class="col-sm-5 control-label">What type of franchise it is?</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="franchiseType" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="importExport" class="col-sm-5 control-label">Is your business dealing with import or
+                                        export?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="importExport">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="fullEmpNumber" class="col-sm-5 control-label">Please indicate the number of full-time employees in your business/ organisation<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="fullEmpNumber" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="partEmpNumber" class="col-sm-5 control-label">Please indicate the number of part-time employees in your business/ organisation<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="partEmpNumber" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="rbsMain" class="col-sm-5 control-label">Will RBS be your main bank for
+                                        business?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="rbsMain">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="annualProfit" class="col-sm-5 control-label">Provide your actual or anticipated annual profit before tax for this financial year<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="annualProfit" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="finYearEnd" class="col-sm-5 control-label">When does/will your financial year end?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="finYearEnd" placeholder="dd/mm/yyyy" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="estabDate" class="col-sm-5 control-label">When was your business established/ incorporated?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="estabDate" placeholder="dd/mm/yyyy" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="tradingStartDate" class="col-sm-5 control-label">What date did you / will you start trading?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="tradingStartDate" placeholder="dd/mm/yyyy" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="regCountry" class="col-sm-5 control-label">Country of registration/formation<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="regCountry">
+                                            <option value="">Select</option>
+                                            <option value="uk">UNITED KINGDOM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="taxCountry" class="col-sm-5 control-label">In which country is your business resident for tax purposes?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="taxCountry">
+                                            <option value="">Select</option>
+                                            <option value="uk">UNITED KINGDOM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="taxID" class="col-sm-5 control-label" data-trigger="hover focus" data-toggle="tooltip" data-placement="top" title="Please enter the Tax Identification or Reference number/Social Security Number or local equivalent for selected country. If United Kingdom please leave blank. You may be asked for further information if you have more than one country where you are a resident for tax.">Please provide Tax ID number
+                                        <i class="fa fa-info-circle red popoverIcon"></i>
+                                    </label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="taxID">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="taxOtherCountry" class="col-sm-5 control-label" data-trigger="hover focus"
+                                            data-toggle="tooltip" data-placement="top" title="Please select the country where your business is resident for income or corporation tax purposes. If you are a UK tax resident only, you are NOT required to answer any further questions on tax.">Is your business resident for tax purposes in any other countries?<span class="red">*</span>
+                                        <i class="fa fa-info-circle red popoverIcon"></i>
+                                    </label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="taxOtherCountry" onchange="isTaxOther(this);">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="taxOther">
+                                    <div class="form-group">
+                                        <label for="taxCountry1" class="col-sm-5 control-label" data-trigger="hover focus" data-toggle="tooltip" data-placement="top" title="Please enter the Tax Identification or Reference number/Social Security Number or local equivalent for selected country. If United Kingdom please leave blank. You may be asked for further information if you have more than one country where you are a resident for tax.">If 'Yes' please provide details of additional tax residencies
+                                            <i class="fa fa-info-circle red popoverIcon"></i>
+                                        </label>
+                                        <div class="col-sm-7">
+                                            <select class="form-control" id="taxCountry1">
+                                                <option value="">Select</option>
+                                                <option value="uk">UNITED KINGDOM</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="taxID1" class="col-sm-5 control-label">If 'Yes' please provide Tax ID number</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="taxID1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="mainActivity" class="col-sm-5 control-label">What is your Business's main trading activity(Describe in detail the trading activity)<span class="red">*</span> </label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="mainActivity" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ownAcc" class="col-sm-5 control-label">Will you do your own accounting?<span
+                                            class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="ownAcc">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="stockEx" class="col-sm-5 control-label">Is your business listed on a public stock
+                                        exchange?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="stockEx" onchange="isStockEx(this);">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="stockExchange">
+                                    <div class="form-group">
+                                        <label for="stockExCountry" class="col-sm-5 control-label">If 'Yes' In which country is it listed?</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="stockExCountry">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="stockExMarket" class="col-sm-5 control-label">If 'Yes' In which market is it listed?</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="stockExMarket">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="creditordUptodate" class="col-sm-5 control-label">Are all creditors and debtors up to
+                                        date?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="creditordUptodate">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ccj" class="col-sm-5 control-label">Are you aware of any Adverse Bureau Data
+                                        e.g County Court Judgements (CCJs) registered against any of the authorised signatories on the account?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="ccj" onchange="isCCJ(this);">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="ccjTrue">
+                                    <div class="form-group">
+                                        <label for="ccjDetails" class="col-sm-5 control-label">If 'Yes' In which country is it listed?</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="ccjDetails">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="taxArrears" class="col-sm-5 control-label">Does your business/organisation have any
+                                        VAT, PAYE, NIC or TAX arrears, or active legal proceedings?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="taxArrears" onchange="isTaxArrears(this);">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="taxArrearsTrue">
+                                    <div class="form-group">
+                                        <label for="taxArrears3" class="col-sm-5 control-label">If 'Yes' please
+                                            provide details here</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="taxArrears3">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <h2><span>Personal</span> <span>Details</span></h2>
+                <section>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="step-heading text-center">
+                                <h3>Personal Details</h3>
+                                <br>
+                                <p>This is stage 2 of 5. Required fields are indicated with an asterisk (<span class="red">*</span>). Please do not use your browser's 'back' button to move back or you may lose some of the information you have already entered.</p>
+                                <br>
+                                <p>You - Tell us your personal details</p>
+                                <p>Limited Company - please provide details of all parties associated with the business (eg directors, Company secretary, authorised signatories and beneficial owners).</p>
+                                <p>Limited Liability Partnership - provide details of all members.</p>
+                                <br>
+                                <h4>Party One</h4>
+                                <br>
+                            </div>
+                            <form class="form-horizontal" role="form">
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label" for="otherBankAcc">Do you hold any other bank accounts with us?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="otherBankAcc" onchange="isTaxArrears(this);">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="title" class="col-sm-5 control-label">Title<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="title" onchange="selectedTitle(this);" required>
+                                            <option value="Not Selected">Select</option>
+                                            <option value="mr">Mr</option>
+                                            <option value="mrs">Mrs</option>
+                                            <option value="miss">Miss</option>
+                                            <option value="ms">Ms</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="otherTitle">
+                                    <div class="form-group">
+                                        <label for="title1" class="col-sm-5 control-label">If 'Other' please specify</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="title1">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="fName" class="col-sm-5 control-label">First Name<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="fName" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="midName" class="col-sm-5 control-label">Middle Name(s)</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="midName">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="surName" class="col-sm-5 control-label">Surname<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="surName" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="birthDate" class="col-sm-5 control-label">Date of Birth<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="birthDate" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label">Please select all your roles within the business/organisation<span class="red">*</span></label>
+                                    <div class="col-sm-4  cb-two-row">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="role1" value="Director">Director
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="role2" value="Beneficial Owner"> Beneficial Owner
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="role3" value="Company Secretary">Company Secretary
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="role4" value="Secretary">Secretary
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="role5" value="Member">Member
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="role6" value="Member">Official
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="role7" value="Financial Director">Financial Director
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="role8" value="Employee">Employee
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3 cb-two-row">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="role9" value="Shareholder">Shareholder
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="role10" value="Signatory">Signatory
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="role11" value="Administrator">Administrator
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="role12" value="Partner">Partner
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="role13" value="Owner">Owner
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="role14" value="Marketing Manager">Marketing Manager
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="role15" value="Accounts Manager">Accounts Manager
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="role16" value="Other" onclick="isRoleOther(this);">Other
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="otherRoleTrue">
+                                    <div class="form-group">
+                                        <label for="otherRole" class="col-sm-5 control-label">If 'Other' please specify</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="otherRole">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="gender" class="col-sm-5 control-label">Gender<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="gender" required>
+                                            <option value="Not Selected">Select</option>
+                                            <option value="male">Male</option>
+                                            <option value="femail">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="homeAddress" class="col-sm-5 control-label">Is your home address the same as your organisation's?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="homeAddress" onchange="selectedHomeAddress(this);" required>
+                                            <option value="Not Selected">Select</option>
+                                            <option value="Registered Address">Registered Address</option>
+                                            <option value="Trading Address">Trading Address</option>
+                                            <option value="Statement and Correspondence address">Statement and Correspondence address</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="otherHomeAddress">
+                                    <strong>If 'Other' please provide details</strong>
+                                    <br>
+                                    <br>
+                                    <div class="form-group">
+                                        <label for="buildingNameNumberHome" class="col-sm-5 control-label">Building name/number</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="buildingNameNumberHome">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="streetNameHome" class="col-sm-5 control-label">Street</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="streetNameHome">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="townCityNameHome" class="col-sm-5 control-label">Town /City</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="townCityNameHome">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="countryStateNameHome" class="col-sm-5 control-label">County/State</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="countryStateNameHome">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="countryNameHome" class="col-sm-5 control-label">Country</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="countryNameHome">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="postCoodeHome" class="col-sm-5 control-label">Post Code</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="postCoodeHome">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="homeAddressEntry" class="col-sm-5 control-label">Date of entry to this address?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="homeAddressEntry" placeholder="dd/mm/yyyy" required>
+                                    </div>
+                                </div>
+                                <div class="lessThan3years">
+                                    <strong>If less than 3 years please provide the following details.</strong>
+                                    <br>
+                                    <br>
+                                    <div class="form-group">
+                                        <label for="buildingNameNumberHome3less" class="col-sm-5 control-label">Building name/number</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="buildingNameNumberHome3less">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="streetNameHome3less" class="col-sm-5 control-label">Street</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="streetNameHome3less">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="townCityNameHome3less" class="col-sm-5 control-label">Town /City</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="townCityNameHome3less">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="countryStateNameHome3less" class="col-sm-5 control-label">County/State</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="countryStateNameHome3less">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="countryNameHome3less" class="col-sm-5 control-label">Country</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="countryNameHome3less">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="postCoodeHome3less" class="col-sm-5 control-label">Post Code</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="postCoodeHome3less">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="homePhone" class="col-sm-5 control-label">Home telephone number<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="homePhone" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="daytimePhone" class="col-sm-5 control-label">Preferred daytime contact number<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="daytimePhone" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="persMobPhone" class="col-sm-5 control-label">Mobile number<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="persMobPhone" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="persEmail" class="col-sm-5 control-label">Email Address<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="persEmail" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="nationality" class="col-sm-5 control-label">Country of Nationality ?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="nationality">
+                                            <option value="">Select</option>
+                                            <option value="uk">UNITED KINGDOM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label" for="isOtherNat"
+                                            data-trigger="hover focus" data-toggle="tooltip" data-placement="top" title="If you have citizenship of any country other than your nationality please select. You may be subsequently asked for further information if you have dual or multiple Citizenships.">Are you a national and or Citizen of any other country ?<span class="red">*</span>
+                                        <i class="fa fa-info-circle red popoverIcon"></i>
+                                    </label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="isOtherNat" onchange="isOtherNationality(this);">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="otherNatTrue">
+                                    <div class="form-group">
+                                        <label for="otherNat" class="col-sm-5 control-label">If 'Yes' please provide Country of Nationality/Citizenship</label>
+                                        <div class="col-sm-7">
+                                            <select class="form-control" id="otherNat">
+                                                <option value="">Select</option>
+                                                <option value="uk">UNITED KINGDOM</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="residenceCountry" class="col-sm-5 control-label">Country of residence<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="residenceCountry">
+                                            <option value="">Select</option>
+                                            <option value="uk">UNITED KINGDOM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="birthCountry" class="col-sm-5 control-label">Country of birth<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="birthCountry">
+                                            <option value="">Select</option>
+                                            <option value="uk">UNITED KINGDOM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="birthTown" class="col-sm-5 control-label">Place of birth (Town)<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="birthTown" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="taxResidentCountry" class="col-sm-5 control-label">In which country are you resident for tax purposes?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="taxResidentCountry">
+                                            <option value="">Select</option>
+                                            <option value="uk">UNITED KINGDOM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="taxIdNo" class="col-sm-5 control-label" data-trigger="hover focus" data-toggle="tooltip" data-placement="top" title="Please enter the Tax Identification or Reference number/Social Security Number or local equivalent for selected country. If United Kingdom please leave blank. You may be asked for further information if you have more than one country where you are a resident for tax.">Please provide Tax identification no
+                                        <i class="fa fa-info-circle red popoverIcon"></i>
+                                    </label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="taxIdNo">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="isOtherTaxResCoun" class="col-sm-5 control-label" data-trigger="hover focus"
+                                           data-toggle="tooltip" data-placement="top" title="Please select the country where you are resident for income or corporation tax purposes. If you are a UK tax resident only, you are NOT required to answer any further questions on tax.">Are you resident for tax purposes in any other country?<span class="red">*</span>
+                                        <i class="fa fa-info-circle red popoverIcon"></i>
+                                    </label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="isOtherTaxResCoun" onchange="isOtherTaxResCountry(this);">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="otherTaxResCountryTrue">
+                                    <div class="form-group">
+                                        <label for="otherTaxResCountry" class="col-sm-5 control-label" data-trigger="hover focus" data-toggle="tooltip" data-placement="top" title="Please enter the Tax Identification or Reference number/Social Security Number or local equivalent for selected country. If United Kingdom please leave blank. You may be asked for further information if you have more than one country where you are a resident for tax.">If 'Yes' please provide Country
+                                            <i class="fa fa-info-circle red popoverIcon"></i>
+                                        </label>
+                                        <div class="col-sm-7">
+                                            <select class="form-control" id="otherTaxResCountry">
+                                                <option value="">Select</option>
+                                                <option value="uk">UNITED KINGDOM</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="otherTaxResID" class="col-sm-5 control-label">If 'Yes' please provide Tax identification no</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="otherTaxResID">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="bizOwnerDate" class="col-sm-5 control-label">When did you become the owner of your business?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="bizOwnerDate" placeholder="dd/mm/yyyy" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="bizOwnerPeriod" class="col-sm-5 control-label">How long have you been in this line of business?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="bizOwnerPeriod" placeholder="yyyy/mm" required>
+                                    </div>
+                                </div>
+                                <div class="step-heading text-center">
+                                    <h4>Details of Principals' experience in this activity/industry</h4>
+                                    <br>
+                                </div>
+                                <div class="form-group">
+                                    <label for="expYears" class="col-sm-5 control-label">Number of years experience<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="expYears">
+                                            <option value="">Select</option>
+                                            <option value="None">None</option>
+                                            <option value="0 - 3 years">0 - 3 years</option>
+                                            <option value="3 - 5 years">3 - 5 years</option>
+                                            <option value="5 - 10 years">5 - 10 years</option>
+                                            <option value="10 years +">10 years +</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="expDesc" class="col-sm-5 control-label">Description of Experience<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="expDesc">
+                                            <option value="">Select</option>
+                                            <option value="No Previous Experience">No Previous Experience</option>
+                                            <option value="Previously ran a similar business">Previously ran a similar business</option>
+                                            <option value="Previously worked in a similar business">Previously worked in a similar business</option>
+                                            <option value="Previously ran a non-similar business">Previously ran a non-similar business</option>
+                                            <option value="Previously worked in a non-similar business">Previously worked in a non-similar business</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="finOwnership" class="col-sm-5 control-label">Financial Ownership (%)<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="finOwnership" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="votingOwnership" class="col-sm-5 control-label">Voting Ownership(%)<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="votingOwnership" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="indivOccup" class="col-sm-5 control-label">Individual's Occupation<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="indivOccup" required>
+                                            <option value="">Select</option>
+                                            <option value="Self employed">Self employed</option>
+                                            <option value="Academic Staff">Academic Staff</option>
+                                            <option value="Accountant">Accountant</option>
+                                            <option value="Agricultural Worker">Agricultural Worker</option>
+                                            <option value="Architect">Architect</option>
+                                            <option value="Armed forces - officer">Armed forces - officer</option>
+                                            <option value="Armed forces - other ranks">Armed forces - other ranks</option>
+                                            <option value="Care assistant">Care assistant</option>
+                                            <option value="Chef">Chef</option>
+                                            <option value="Doctor / dentist">Doctor / dentist</option>
+                                            <option value="Domestic responsibilities">Domestic responsibilities</option>
+                                            <option value="Emergency service worker">Emergency service worker</option>
+                                            <option value="Farmer / farm worker">Farmer / farm worker</option>
+                                            <option value="Hairdresser">Hairdresser</option>
+                                            <option value="IT Manager">IT Manager</option>
+                                            <option value="IT Professional">IT Professional</option>
+                                            <option value="Manager / Assistant manager">Manager / Assistant manager</option>
+                                            <option value="Managing director">Managing director</option>
+                                            <option value="Manual - semi-skilled">Manual - semi-skilled</option>
+                                            <option value="Manual - skilled">Manual - skilled</option>
+                                            <option value="Manual - unskilled">Manual - unskilled</option>
+                                            <option value="Nurse">Nurse</option>
+                                            <option value="Office clerical worker">Office clerical worker</option>
+                                            <option value="Professional">Professional</option>
+                                            <option value="Professor">Professor</option>
+                                            <option value="Retired">Retired</option>
+                                            <option value="Sales">Sales</option>
+                                            <option value="Schoolchild">Schoolchild</option>
+                                            <option value="Senior manager / director">Senior manager / director</option>
+                                            <option value="Professional senior">Professional senior</option>
+                                            <option value="Service worker">Service worker</option>
+                                            <option value="Social worker">Social worker</option>
+                                            <option value="Solicitor">Solicitor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="livingCirc" class="col-sm-5 control-label">Which best describes your living circumstances?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="livingCirc" required>
+                                            <option value="">Select</option>
+                                            <option value="Home Owner">Home Owner</option>
+                                            <option value="Private Tenant">Private Tenant</option>
+                                            <option value="Council Tenant">Council Tenant</option>
+                                            <option value="Living with Parents">Living with Parents</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="persCards" class="col-sm-5 control-label">Do you hold any personal credit, charge or
+                                        store cards?<span class="red">*</span>
+                                    </label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="persCards" onchange="isPersCards(this);">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="persCardsTrue">
+                                    <div class="form-group">
+                                        <label for="pesrCardType" class="col-sm-5 control-label">If 'Yes' which of the following Cards does the customer have</label>
+                                        <div class="col-sm-7">
+                                            <select class="form-control" id="pesrCardType" onchange="persCardSelected(this);">
+                                                <option value="">Select</option>
+                                                <option value="Visa">Visa</option>
+                                                <option value="MasterCard">MasterCard</option>
+                                                <option value="Amex / Diners">Amex / Diners</option>
+                                                <option value="StoreCard">StoreCard</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="otherPersCardTrue">
+                                        <div class="form-group">
+                                            <label for="otherPersCard" class="col-sm-5 control-label">If 'Other' please specify</label>
+                                            <div class="col-sm-7">
+                                                <input type="text" class="form-control" id="otherPersCard">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="bankAcc" class="col-sm-5 control-label">Do you have a Bank Account?<span
+                                            class="red">*</span>
+                                    </label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="bankAcc" onchange="isBankAcc(this);">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="bankAccTrue">
+                                    <div class="form-group">
+                                        <label for="bankAccDate" class="col-sm-5 control-label">If 'Yes' when did you become a customer of your current Bank?</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="bankAccDate" placeholder="dd/mm/yyy">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="courtProc" class="col-sm-5 control-label">Have you ever been insolvent, bankrupt,
+                                        sequestrated, involved in any court proceedings for debt or made arrangements with your creditors?<span class="red">*</span>
+                                    </label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="courtProc" onchange="isCourtProc(this);">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="courtProcTrue">
+                                    <div class="form-group">
+                                        <label for="courtProcDetail" class="col-sm-5 control-label">If 'Yes' please provide details (Bankruptcy, Court proceedings) A discharge certificate may be required if the bankruptcy has been discharged.</label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="courtProcDetail">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="memoWord" class="col-sm-5 control-label" data-trigger="hover focus" data-toggle="tooltip" data-placement="top" title="(Choose a word of no more than 15 characters. This is used to confirm certain transactions)">Memorable Word<span class="red">*</span>
+                                        <i class="fa fa-info-circle red popoverIcon"></i>
+                                    </label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="memoWord" required>
+                                    </div>
+                                    <br>
+                                    <br>
+                                </div>
+                                <a id="addPerson" class="btn btn-default">Add details of further principals</a>
+                                <br>
+                                <br>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <h2><span>Banking</span> <span>Requirements</span></h2>
+                <section>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="step-heading text-center">
+                                <h3>Banking Requirements</h3>
+                                <br>
+                                <p>This is stage 3 of 5. Required fields are indicated with an asterisk (<span class="red">*</span>). Please do not use your browser's 'back' button to move back or you may lose some of the information you have already entered.</p>
+                                <br>
+                            </div>
+                            <form class="form-horizontal" role="form" id="bankingRequirements">
+                                <div class="form-group">
+                                    <label for="bizBranch" class="col-sm-5 control-label">Which branch would you like to open your business bank account at?<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="bizBranch" required>
+                                    </div>
+                                </div>
+                                <div class="step-heading text-center">
+                                    <h3>Your Current Account</h3>
+                                    <br>
+                                </div>
+                                <div class="form-group">
+                                    <label for="chequeBook" class="col-sm-5 control-label">Is cheque book required for this account</label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="chequeBook" onchange="isChequeBook(this);">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="chequeBookTrue">
+                                    <div class="form-group">
+                                        <label for="chequeBookType" class="col-sm-5 control-label">If selected - Please select cheque book type</label>
+                                        <div class="col-sm-7">
+                                            <select class="form-control" id="chequeBookType">
+                                                <option value="Not Select">Select</option>
+                                                <option value="60 Cheques with single counterfoil">60 Cheques with single counterfoil</option>
+                                                <option value="25 Cheques with left hand counterfoil">25 Cheques with left hand counterfoil</option>
+                                                <option value="25 Cheques with counterfoil">25 Cheques with counterfoil</option>
+                                                <option value="25 Cheques without counterfoil">25 Cheques without counterfoil</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="payinBook" class="col-sm-5 control-label">Please tick if pay in book is required for this account</label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="payinBook" onchange="isPayinBook(this);">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="payinBookTrue">
+                                    <div class="form-group">
+                                        <label for="payinBookType" class="col-sm-5 control-label">If selected - Please select pay in book type</label>
+                                        <div class="col-sm-7">
+                                            <select class="form-control" id="payinBookType">
+                                                <option value="Select">Select</option>
+                                                <option value="Credits with single Counterfoil">Credits with single Counterfoil</option>
+                                                <option value="Credits with double counterfoil">Credits with double counterfoil</option>
+                                                <option value="Credits with counterfoil and duplication sheets">Credits with counterfoil and duplication sheets</option>
+                                                <option value="Large credits with single sheets">Large credits with single sheets</option>
+                                                <option value="Fast Cash credits">Fast Cash credits</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="processDay" class="col-sm-5 control-label">Day of the Month you would like your statement processed<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="processDay" required>
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="delivMethod" class="col-sm-5 control-label">Statement delivery method<span
+                                            class="red">*</span>
+                                    </label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="delivMethod">
+                                            <option value="Not Selected">Select</option>
+                                            <option value="Post">Post</option>
+                                            <option value="Internet">Internet</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label">As part of our business account package you are registered for our free online or telephone banking services. Please tick the box if these services are not required<span class="red">*</span>
+                                    </label>
+                                    <div class="col-sm-7">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="notReqService1" value="Internet">Internet
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="notReqService2" value="Telephony">Telephony
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="savingAcc" class="col-sm-5 control-label bold">Would you like a savings account
+                                        ?<span class="red">*</span>
+                                    </label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="savingAcc" >
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="step-heading text-center">
+                                    <h4>Business Savings Account up to £2million turnover</h4>
+                                    <br>
+                                </div>
+                                <div class="form-group">
+                                    <label for="confirmRead" class="col-sm-5 control-label">Please tick the box to confirm that you have read & downloaded Business Banking Terms for Safe Bank savings accounts (PDF File 420KB)</label>
+                                    <div class="col-sm-7">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="confirmRead" value="" onclick="isConfirmRead(this);">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="confirmReadTrue">
+                                    <div class="form-group">
+                                        <label for="accountType" class="col-sm-5 control-label" data-trigger="hover focus" data-toggle="tooltip" data-placement="top" title="You may need to complete an additional application form for some accounts. Our staff will be happy to discuss this and the Business Savings accounts available.">Which account would you like to apply for?
+                                            <i class="fa fa-info-circle red popoverIcon"></i>
+                                        </label>
+                                        <div class="col-sm-7">
+                                            <select class="form-control" id="accountType">
+                                                <option value="Not Selected">Select</option>
+                                                <option value="Business Reserve">Business Reserve</option>
+                                                <option value="Client Deposit Manager">Client Deposit Manager</option>
+                                                <option value="Client Monies Service">Client Monies Service</option>
+                                                <option value="Investments">Investments</option>
+                                                <option value="Liquidity Manager 30 Day Notice">Liquidity Manager 30 Day Notice</option>
+                                                <option value="Liquidity Manager 95 Day Notice">Liquidity Manager 95 Day Notice</option>
+                                                <option value="Treasury Reserve (Non-sterling)">Treasury Reserve (Non-sterling)</option>
+                                                <option value="Treasury Reserve (Sterling)">Treasury Reserve (Sterling)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="step-heading text-center">
+                                    <h4>Your borrowing</h4>
+                                    <br>
+                                </div>
+                                <div class="form-group">
+                                    <label for="overdraft" class="col-sm-5 control-label bold">Do you require an overdraft for use
+                                        on this account?<span class="red">*</span>
+                                    </label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="overdraft" onchange="isOverdraft(this);">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="overdraftTrue">
+                                    <div class="form-group">
+                                        <label for="overdraftAmount" class="col-sm-5 control-label" data-trigger="hover focus" data-toggle="tooltip" data-placement="top" title="All finance is subject to status. You may need to provide further information. This does not constitute a binding offer or commitment by the Bank. Any formal offer would be subject to status, credit approval and the completion of documentation satisfactory to the Bank. Security may be required. Product fees may apply. Over 18s only. ANY PROPERTY USED AS SECURITY, WHICH MAY INCLUDE YOUR HOME, MAY BE REPOSSESSED IF YOU DO NOT KEEP UP REPAYMENTS ON A MORTGAGE OR OTHER DEBT SECURED ON IT">If you do require an overdraft, please specify how much (£)
+                                            <i class="fa fa-info-circle red popoverIcon"></i>
+                                        </label>
+                                        <div class="col-sm-7">
+                                            <input type="text" class="form-control" id="overdraftAmount" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="step-heading text-center">
+                                    <h4>Your protection</h4>
+                                    <br>
+                                    <p>It is important you consider carefully how you can protect your business against unforeseen circumstances to allow you to plan and run your business with confidence.</p>
+                                    <p>For your free no obligation quote from Safe Bank Business Insurance Services, we will arrange for you to speak to the Business Insurance Team when you open the account. Alternatively, you may wish to call them now on 0800 123123 (Monday to Friday 8am to 8pm or Saturday 10am to 1pm, excluding public holidays).</p>
+                                    <p>Please quote the reference number 'current'. Calls may be recorded.</p>
+                                    <br>
+                                </div>
+                                <strong>Please provide the following account details if you wish to open an additional business current account using the same operating mandate.</strong>
+                                <br>
+                                <br>
+                                <div class="form-group">
+                                    <label for="additionalBiz" class="col-sm-5 control-label bold">Would you like to open an additional
+                                        business account using the same operating mandate?<span class="red">*</span>
+                                    </label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="additionalBiz">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="additionalAcc" class="col-sm-5 control-label">Title of additional account</label>
+                                    <div class="col-sm-7">
+                                        <input type="text" class="form-control" id="additionalAcc">
+                                    </div>
+                                </div>
+                                <strong>We also offer a mobile business banking app. click <a href="">here</a> for details.</strong>
+                                <br>
+                                <br>
+                                <div class="form-group">
+                                    <label for="quickDeposit" class="col-sm-5 control-label bold">Would you like more information on
+                                        our Business Quick Deposit service, A quick and easy ways to pay in cash and cheques ?<span class="red">*</span>
+                                    </label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="quickDeposit">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="debitCard" class="col-sm-5 control-label bold">Would you like a Business Debit Card
+                                        to help you manage your daily work expenses and withdraw cash?<span class="red">*</span>
+                                    </label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="debitCard">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="step-heading text-center">
+                                    <h4>Business Credit Card</h4>
+                                    <br>
+                                </div>
+                                <strong>If you wish to apply for a Business Credit Card(s) please read (1) and (2) below.</strong>
+                                <br>
+                                <br>
+                                <p>1. To apply for a Business Credit Card your registered business address must be in the United Kingdom, Channel Islands, lsle of Man or Gibraltar or you should be registered for tax purpose in one of those jurisdictions.</p>
+                                <p>2. By completing below you are asking the Bank to issue Cards to all the Cardholders named there. If we approve the application for a Business Credit Card for Party (1), this does not mean that we have also approved the request for Cards to be issued to Party (2), (3) and (4) (if any). Separate checks may be carried out in respect of Party (2), (3) and (4) after your Business Credit Card Agreement for Party (1) has been made.</p>
+                                <br>
+                                <strong>As part of your free Business Banking package, you may apply for a Business Credit Card free from annual fees in your first year (subject to status).</strong>
+                                <br>
+                                <br>
+                                <div class="form-group">
+                                    <label for="bizCC" class="col-sm-5 control-label bold">Would you like a Business Credit Card
+                                        for the account ?<span class="red">*</span>
+                                    </label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="bizCC">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <h2><span>Important</span> <span>Information</span></h2>
+                <section>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="step-heading text-center">
+                                <h3>Important Information</h3>
+                                <br>
+                                <p>This is stage 4 of 5. Required fields are indicated with an asterisk (<span class="red">*</span>). Please do not use your browser's 'back' button to move back or you may lose some of the information you have already entered.</p>
+                                <br>
+                                <h4>Our agreement for your account and Business card padlockCredit reference agencies</h4>
+                                <br>
+                            </div>
+                            <form class="form-horizontal" role="form">
+                                <p>We may obtain information about the business and the proprietors of that business from credit reference agencies and Group records to check your credit status and identity. The agencies will record our enquiries which may be seen by other companies who make their own credit enquiries. This may affect your ability to obtain credit elsewhere in the near future. We may use credit scoring.</p>
+                                <br>
+                                <p>Your business application will be assessed using credit reference agency records relating to anyone with whom you have a joint account or similar financial association. If this is a joint application and such a link does not already exist then one may be created now. These links will remain until you file a "notice of disassociation" at the credit reference agencies.</p>
+                                <br>
+                                <strong>padlockFraud prevention agencies</strong>
+                                <br>
+                                <br>
+                                <p>If false or inaccurate information is provided and fraud is identified or suspected, details may be passed to fraud prevention agencies.</p>
+                                <p>We may also obtain information about you from fraud prevention agencies.</p>
+                                <br>
+                                <strong>padlockInternet and telephone banking</strong>
+                                <br>
+                                <br>
+                                <p>We will, where appropriate, automatically register you for Digital and Direct Banking for Business, our internet and telephone banking services. We will send you more details, together with the information you need to start making use of these services once your account is opened.</p>
+                                <p>Safe Bank subscribes to the Lending Code. The Code can be found at www.lendingstandardsboard.org.uk</p>
+                                <br>
+                                <strong>padlockKeeping you informed</strong>
+                                <br>
+                                <br>
+                                <p>We would like to keep you informed by letter and by phone about products, services and additional benefits that we believe may be of interest to you.</p>
+                                <br>
+                                <div class="form-group">
+                                    <label for="noPadlockKeeping" class="col-sm-5 control-label">If you don't want us to do this, please tick this box.</label>
+                                    <div class="col-sm-7">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="noPadlockKeeping" value="">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Notwithstanding your choices above we shall keep you informed of preferential offers that are directly associated with this account.</p>
+                                <p>We would also like to keep you informed via the e-mail address or mobile number you may have provided earlier in this form.</p>
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label bold" for="infoByEmail">May we keep you informed by email?<span class="red">*</span>
+                                    </label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="infoByEmail">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="infoByMob" class="col-sm-5 control-label bold" >May we keep you informed by mobile
+                                        messaging?<span class="red">*</span>
+                                    </label>
+                                    <div class="col-sm-7">
+                                        <select class="form-control" id="infoByMob">
+                                            <option value="No">No</option>
+                                            <option value="Yes">Yes</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <strong>padlock Financial Services Compensation Scheme</strong>
+                                <br>
+                                <br>
+                                <p>It is important that you read the Financial Services Compensation Scheme Information Sheet before you open your account.</p>
+                                <p>Your eligible deposits with Safe Bank are protected by the Financial Services Compensation Scheme which is there to protect you if the bank is unable to meet its financial obligations. Further information about the scheme can be found on the FSCS Information Sheet which we will provide or by referring to the FSCS website. Please read this to find out what is and isn't covered by the scheme.</p>
+                                <div class="form-group">
+                                    <label for="FSCS" class="col-sm-5 control-label">I have received the FSCS Information Sheet<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="FSCS" value="">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <strong>padlockGiving your consent</strong>
+                                <br>
+                                <br>
+                                <p>By clicking on submit you are agreeing that we may use your information in the way described in this form (including the "Keeping you infomed" section).</p>
+                                <br>
+                                <strong>Terms and Conditions</strong>
+                                <br>
+                                <br>
+                                <div class="form-group">
+                                    <label for="terms" class="col-sm-5 control-label">I/We have printed and/or downloaded the Terms and Conditions (PDF, 478KB) and have read and agree to abide by the Terms and Conditions<span class="red">*</span></label>
+                                    <div class="col-sm-7">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="optionsRadios" id="terms" value="">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+                <h2><span>Application</span> <span>Confirmation</span></h2>
+                <section>
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="step-heading text-center">
+                                <h3>Application Confirmation</h3>
+                                <br>
+                                <p>This is stage 5 of 5. Required fields are indicated with an asterisk (<span class="red">*</span>). Please do not use your browser's 'back' button to move back or you may lose some of the information you have already entered.</p>
+                                <br>
+                                <h4>Thank you for choosing a Safe Bank Business Bank Account. We look forward to supporting you and your business.</h4>
+                                <br>
+                            </div>
+                            <strong>What Happens Next</strong>
+                            <br>
+                            <br>
+                            <p>You will receive a phone call**/email from one of our Business Specialists in order to confirm the information submitted and ensure we fully understand what your business is about and how we can support.</p>
+                            <p>We will then post or email your documents for signing. If we require ID you will need to visit one of our branches.</p>
+                            <p>Once we receive your signed application, assuming all is ok, we will open the account and advise you of your account details.</p>
+                            <br>
+                            <br>
+                            <p>** Our telephone number will not appear on your mobile screen</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- /container -->
+    <div id="personTemplate" class="hide">
+        <div class="step-heading text-center">
+            <h4>Party <span id="pCount"></span></h4>
+            <br>
+        </div>
+        <div class="form-group">
+            <label for="title" class="col-sm-5 control-label">Title<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <select class="form-control" id="title_" onchange="selectedTitle(this);" required>
+                    <option value="Not Selected">Select</option>
+                    <option value="mr">Mr</option>
+                    <option value="mrs">Mrs</option>
+                    <option value="miss">Miss</option>
+                    <option value="ms">Ms</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="otherTitle">
+            <div class="form-group">
+                <label for="title1" class="col-sm-5 control-label">If 'Other' please specify</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="title1_">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="fName" class="col-sm-5 control-label">First Name<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="fName_" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="midName" class="col-sm-5 control-label">Middle Name(s)</label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="midName_">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="surName" class="col-sm-5 control-label">Surname<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="surName_" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="birthDate" class="col-sm-5 control-label">Date of Birth<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="birthDate_" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-5 control-label">Please select all your roles within the business/organisation<span class="red">*</span></label>
+            <div class="col-sm-4  cb-two-row">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="optionsRadios" id="role1_" value="Director">Director
+                    </label>
+                    <label>
+                        <input type="checkbox" name="optionsRadios" id="role2_" value="Beneficial Owner"> Beneficial Owner
+                    </label>
+                    <label>
+                        <input type="checkbox" name="optionsRadios" id="role3_" value="Company Secretary">Company Secretary
+                    </label>
+                    <label>
+                        <input type="checkbox" name="optionsRadios" id="role4_" value="Secretary">Secretary
+                    </label>
+                    <label>
+                        <input type="checkbox" name="optionsRadios" id="role5_" value="Member">Member
+                    </label>
+                    <label>
+                        <input type="checkbox" name="optionsRadios" id="role6_" value="Member">Official
+                    </label>
+                    <label>
+                        <input type="checkbox" name="optionsRadios" id="role7_" value="Financial Director">Financial Director
+                    </label>
+                    <label>
+                        <input type="checkbox" name="optionsRadios" id="role8_" value="Employee">Employee
+                    </label>
+                </div>
+            </div>
+            <div class="col-sm-3 cb-two-row">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="optionsRadios" id="role9_" value="Shareholder">Shareholder
+                    </label>
+                    <label>
+                        <input type="checkbox" name="optionsRadios" id="role10_" value="Signatory">Signatory
+                    </label>
+                    <label>
+                        <input type="checkbox" name="optionsRadios" id="role11_" value="Administrator">Administrator
+                    </label>
+                    <label>
+                        <input type="checkbox" name="optionsRadios" id="role12_" value="Partner">Partner
+                    </label>
+                    <label>
+                        <input type="checkbox" name="optionsRadios" id="role13_" value="Owner">Owner
+                    </label>
+                    <label>
+                        <input type="checkbox" name="optionsRadios" id="role14_" value="Marketing Manager">Marketing Manager
+                    </label>
+                    <label>
+                        <input type="checkbox" name="optionsRadios" id="role15_" value="Accounts Manager">Accounts Manager
+                    </label>
+                    <label>
+                        <input type="checkbox" name="optionsRadios" id="role16_" value="Other" onclick="isRoleOther(this);">Other
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="otherRoleTrue">
+            <div class="form-group">
+                <label for="otherRole" class="col-sm-5 control-label">If 'Other' please specify</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="otherRole_">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="gender" class="col-sm-5 control-label">Gender<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <select class="form-control" id="gender_" required>
+                    <option value="Not Selected">Select</option>
+                    <option value="male">Male</option>
+                    <option value="femail">Female</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="homeAddress" class="col-sm-5 control-label">Is your home address the same as your organisation's?<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <select class="form-control" id="homeAddress_" onchange="selectedHomeAddress(this);" required>
+                    <option value="Not Selected">Select</option>
+                    <option value="Registered Address">Registered Address</option>
+                    <option value="Trading Address">Trading Address</option>
+                    <option value="Statement and Correspondence address">Statement and Correspondence address</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="otherHomeAddress">
+            <strong>If 'Other' please provide details</strong>
+            <br>
+            <br>
+            <div class="form-group">
+                <label for="buildingNameNumberHome" class="col-sm-5 control-label">Building name/number</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="buildingNameNumberHome_">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="streetNameHome" class="col-sm-5 control-label">Street</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="streetNameHome_">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="townCityNameHome" class="col-sm-5 control-label">Town /City</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="townCityNameHome_">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="countryStateNameHome" class="col-sm-5 control-label">County/State</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="countryStateNameHome_">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="countryNameHome" class="col-sm-5 control-label">Country</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="countryNameHome_">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="postCoodeHome" class="col-sm-5 control-label">Post Code</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="postCoodeHome_">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="homeAddressEntry" class="col-sm-5 control-label">Date of entry to this address?<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="homeAddressEntry_" placeholder="dd/mm/yyyy" required>
+            </div>
+        </div>
+        <div class="lessThan3years">
+            <strong>If less than 3 years please provide the following details.</strong>
+            <br>
+            <br>
+            <div class="form-group">
+                <label for="buildingNameNumberHome3less" class="col-sm-5 control-label">Building name/number</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="buildingNameNumberHome3less_">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="streetNameHome3less" class="col-sm-5 control-label">Street</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="streetNameHome3less_">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="townCityNameHome3less" class="col-sm-5 control-label">Town /City</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="townCityNameHome3less_">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="countryStateNameHome3less" class="col-sm-5 control-label">County/State</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="countryStateNameHome3less_">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="countryNameHome3less" class="col-sm-5 control-label">Country</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="countryNameHome3less_">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="postCoodeHome3less" class="col-sm-5 control-label">Post Code</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="postCoodeHome3less_">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="homePhone" class="col-sm-5 control-label">Home telephone number<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="homePhone_" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="daytimePhone" class="col-sm-5 control-label">Preferred daytime contact number<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="daytimePhone_" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="persMobPhone" class="col-sm-5 control-label">Mobile number<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="persMobPhone_" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="persEmail" class="col-sm-5 control-label">Email Address<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="persEmail_" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="nationality" class="col-sm-5 control-label">Country of Nationality ?<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <select class="form-control" id="nationality_">
+                    <option value="">Select</option>
+                    <option value="uk">UNITED KINGDOM</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-sm-5 control-label" for="isOtherNat"
+                   data-trigger="hover focus" data-toggle="tooltip" data-placement="top" title="If you have citizenship of any country other than your nationality please select. You may be subsequently asked for further information if you have dual or multiple Citizenships.">Are you a national and or Citizen of any other country ?<span class="red">*</span>
+                <i class="fa fa-info-circle red popoverIcon"></i>
+            </label>
+            <div class="col-sm-7">
+                <select class="form-control" id="isOtherNat_" onchange="isOtherNationality(this);">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </div>
+        </div>
+        <div class="otherNatTrue">
+            <div class="form-group">
+                <label for="otherNat" class="col-sm-5 control-label">If 'Yes' please provide Country of Nationality/Citizenship</label>
+                <div class="col-sm-7">
+                    <select class="form-control" id="otherNat_">
+                        <option value="">Select</option>
+                        <option value="uk">UNITED KINGDOM</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="residenceCountry" class="col-sm-5 control-label">Country of residence<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <select class="form-control" id="residenceCountry_">
+                    <option value="">Select</option>
+                    <option value="uk">UNITED KINGDOM</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="birthCountry" class="col-sm-5 control-label">Country of birth<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <select class="form-control" id="birthCountry_">
+                    <option value="">Select</option>
+                    <option value="uk">UNITED KINGDOM</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="birthTown" class="col-sm-5 control-label">Place of birth (Town)<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="birthTown_" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="taxResidentCountry" class="col-sm-5 control-label">In which country are you resident for tax purposes?<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <select class="form-control" id="taxResidentCountry_">
+                    <option value="">Select</option>
+                    <option value="uk">UNITED KINGDOM</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="taxIdNo" class="col-sm-5 control-label" data-trigger="hover focus" data-toggle="tooltip" data-placement="top" title="Please enter the Tax Identification or Reference number/Social Security Number or local equivalent for selected country. If United Kingdom please leave blank. You may be asked for further information if you have more than one country where you are a resident for tax.">Please provide Tax identification no
+                <i class="fa fa-info-circle red popoverIcon"></i>
+            </label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="taxIdNo_">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="isOtherTaxResCoun" class="col-sm-5 control-label" data-trigger="hover focus"
+                   data-toggle="tooltip" data-placement="top" title="Please select the country where you are resident for income or corporation tax purposes. If you are a UK tax resident only, you are NOT required to answer any further questions on tax.">Are you resident for tax purposes in any other country?<span class="red">*</span>
+                <i class="fa fa-info-circle red popoverIcon"></i>
+            </label>
+            <div class="col-sm-7">
+                <select class="form-control" id="isOtherTaxResCoun_" onchange="isOtherTaxResCountry(this);">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </div>
+        </div>
+        <div class="otherTaxResCountryTrue">
+            <div class="form-group">
+                <label for="otherTaxResCountry" class="col-sm-5 control-label" data-trigger="hover focus" data-toggle="tooltip" data-placement="top" title="Please enter the Tax Identification or Reference number/Social Security Number or local equivalent for selected country. If United Kingdom please leave blank. You may be asked for further information if you have more than one country where you are a resident for tax.">If 'Yes' please provide Country
+                    <i class="fa fa-info-circle red popoverIcon"></i>
+                </label>
+                <div class="col-sm-7">
+                    <select class="form-control" id="otherTaxResCountry_">
+                        <option value="">Select</option>
+                        <option value="uk">UNITED KINGDOM</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="otherTaxResID" class="col-sm-5 control-label">If 'Yes' please provide Tax identification no</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="otherTaxResID_">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="bizOwnerDate" class="col-sm-5 control-label">When did you become the owner of your business?<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="bizOwnerDate_" placeholder="dd/mm/yyyy" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="bizOwnerPeriod" class="col-sm-5 control-label">How long have you been in this line of business?<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="bizOwnerPeriod_" placeholder="yyyy/mm" required>
+            </div>
+        </div>
+        <div class="step-heading text-center">
+            <h4>Details of Principals' experience in this activity/industry</h4>
+            <br>
+        </div>
+        <div class="form-group">
+            <label for="expYears" class="col-sm-5 control-label">Number of years experience<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <select class="form-control" id="expYears_">
+                    <option value="">Select</option>
+                    <option value="None">None</option>
+                    <option value="0 - 3 years">0 - 3 years</option>
+                    <option value="3 - 5 years">3 - 5 years</option>
+                    <option value="5 - 10 years">5 - 10 years</option>
+                    <option value="10 years +">10 years +</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="expDesc" class="col-sm-5 control-label">Description of Experience<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <select class="form-control" id="expDesc_">
+                    <option value="">Select</option>
+                    <option value="No Previous Experience">No Previous Experience</option>
+                    <option value="Previously ran a similar business">Previously ran a similar business</option>
+                    <option value="Previously worked in a similar business">Previously worked in a similar business</option>
+                    <option value="Previously ran a non-similar business">Previously ran a non-similar business</option>
+                    <option value="Previously worked in a non-similar business">Previously worked in a non-similar business</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="finOwnership" class="col-sm-5 control-label">Financial Ownership (%)<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="finOwnership_" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="votingOwnership" class="col-sm-5 control-label">Voting Ownership(%)<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="votingOwnership_" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="indivOccup" class="col-sm-5 control-label">Individual's Occupation<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <select class="form-control" id="indivOccup_" required>
+                    <option value="">Select</option>
+                    <option value="Self employed">Self employed</option>
+                    <option value="Academic Staff">Academic Staff</option>
+                    <option value="Accountant">Accountant</option>
+                    <option value="Agricultural Worker">Agricultural Worker</option>
+                    <option value="Architect">Architect</option>
+                    <option value="Armed forces - officer">Armed forces - officer</option>
+                    <option value="Armed forces - other ranks">Armed forces - other ranks</option>
+                    <option value="Care assistant">Care assistant</option>
+                    <option value="Chef">Chef</option>
+                    <option value="Doctor / dentist">Doctor / dentist</option>
+                    <option value="Domestic responsibilities">Domestic responsibilities</option>
+                    <option value="Emergency service worker">Emergency service worker</option>
+                    <option value="Farmer / farm worker">Farmer / farm worker</option>
+                    <option value="Hairdresser">Hairdresser</option>
+                    <option value="IT Manager">IT Manager</option>
+                    <option value="IT Professional">IT Professional</option>
+                    <option value="Manager / Assistant manager">Manager / Assistant manager</option>
+                    <option value="Managing director">Managing director</option>
+                    <option value="Manual - semi-skilled">Manual - semi-skilled</option>
+                    <option value="Manual - skilled">Manual - skilled</option>
+                    <option value="Manual - unskilled">Manual - unskilled</option>
+                    <option value="Nurse">Nurse</option>
+                    <option value="Office clerical worker">Office clerical worker</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Professor">Professor</option>
+                    <option value="Retired">Retired</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Schoolchild">Schoolchild</option>
+                    <option value="Senior manager / director">Senior manager / director</option>
+                    <option value="Professional senior">Professional senior</option>
+                    <option value="Service worker">Service worker</option>
+                    <option value="Social worker">Social worker</option>
+                    <option value="Solicitor">Solicitor</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="livingCirc" class="col-sm-5 control-label">Which best describes your living circumstances?<span class="red">*</span></label>
+            <div class="col-sm-7">
+                <select class="form-control" id="livingCirc_" required>
+                    <option value="">Select</option>
+                    <option value="Home Owner">Home Owner</option>
+                    <option value="Private Tenant">Private Tenant</option>
+                    <option value="Council Tenant">Council Tenant</option>
+                    <option value="Living with Parents">Living with Parents</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="persCards" class="col-sm-5 control-label">Do you hold any personal credit, charge or
+                store cards?<span class="red">*</span>
+            </label>
+            <div class="col-sm-7">
+                <select class="form-control" id="persCards_" onchange="isPersCards(this);">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </div>
+        </div>
+        <div class="persCardsTrue">
+            <div class="form-group">
+                <label for="pesrCardType" class="col-sm-5 control-label">If 'Yes' which of the following Cards does the customer have</label>
+                <div class="col-sm-7">
+                    <select class="form-control" id="pesrCardType_" onchange="persCardSelected(this);">
+                        <option value="">Select</option>
+                        <option value="Visa">Visa</option>
+                        <option value="MasterCard">MasterCard</option>
+                        <option value="Amex / Diners">Amex / Diners</option>
+                        <option value="StoreCard">StoreCard</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="otherPersCardTrue">
+                <div class="form-group">
+                    <label for="otherPersCard" class="col-sm-5 control-label">If 'Other' please specify</label>
+                    <div class="col-sm-7">
+                        <input type="text" class="form-control" id="otherPersCard_">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="bankAcc" class="col-sm-5 control-label">Do you have a Bank Account?<span
+                    class="red">*</span>
+            </label>
+            <div class="col-sm-7">
+                <select class="form-control" id="bankAcc_" onchange="isBankAcc(this);">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </div>
+        </div>
+        <div class="bankAccTrue">
+            <div class="form-group">
+                <label for="bankAccDate" class="col-sm-5 control-label">If 'Yes' when did you become a customer of your current Bank?</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="bankAccDate_" placeholder="dd/mm/yyy">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="courtProc" class="col-sm-5 control-label">Have you ever been insolvent, bankrupt,
+                sequestrated, involved in any court proceedings for debt or made arrangements with your creditors?<span class="red">*</span>
+            </label>
+            <div class="col-sm-7">
+                <select class="form-control" id="courtProc_" onchange="isCourtProc(this);">
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                </select>
+            </div>
+        </div>
+        <div class="courtProcTrue">
+            <div class="form-group">
+                <label for="courtProcDetail" class="col-sm-5 control-label">If 'Yes' please provide details (Bankruptcy, Court proceedings) A discharge certificate may be required if the bankruptcy has been discharged.</label>
+                <div class="col-sm-7">
+                    <input type="text" class="form-control" id="courtProcDetail_">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="memoWord" class="col-sm-5 control-label" data-trigger="hover focus" data-toggle="tooltip" data-placement="top" title="(Choose a word of no more than 15 characters. This is used to confirm certain transactions)">Memorable Word<span class="red">*</span>
+                <i class="fa fa-info-circle red popoverIcon"></i>
+            </label>
+            <div class="col-sm-7">
+                <input type="text" class="form-control" id="memoWord_" required>
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/jquery.steps.min.js"></script>
+    <script src="js/libs/jquery.storageapi.min.js"></script>
+    <script src="js/multistep-functions.js"></script>
+</body>
+
+</html>

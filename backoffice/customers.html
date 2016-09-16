@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Customers | CustomerIQ</title>
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<span class='nprogress-logo fade out'></span>
+<div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse side-nav" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">CustomerIQ</a>
+        </div>
+        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav menu-items">
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#dash-dd"><i class="fa fa-fw fa-dashboard"></i> Dashboard <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="dash-dd" class="collapse">
+                        <li>
+                            <a href="#">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#">My Tasks</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#custom-dd"><i class="fa fa-fw fa-university"></i> Customers <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="custom-dd" class="collapse">
+                        <li class="active">
+                            <a href="customers.htlm">Live</a>
+                        </li>
+                        <li>
+                            <a href="#">Monitoring</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#kyc-dd"><i class="fa fa-fw fa-check"></i> KYC <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="kyc-dd" class="collapse">
+                        <li>
+                            <a href="#">Companies House</a>
+                        </li>
+                        <li>
+                            <a href="#">Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#com-dd"><i class="fa fa-fw fa-envelope"></i> Communication <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="com-dd" class="collapse">
+                        <li>
+                            <a href="#">Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#wflow-dd"><i class="fa fa-fw fa-sitemap"></i> Workflow <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="wflow-dd" class="collapse">
+                        <li>
+                            <a href="#">Rules</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#rep-dd"><i class="fa fa-fw fa-check"></i> Reports <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="rep-dd" class="collapse">
+                        <li>
+                            <a href="#">Report 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Report 2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#log-dd"><i class="fa fa-fw fa-file-text-o"></i> Logs <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="log-dd" class="collapse">
+                        <li>
+                            <a href="#">Audit logs</a>
+                        </li>
+                    </ul>
+                </li>
+                  <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#usermngmnt-dd"><i class="fa fa-fw fa-group"></i> User Management <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="usermngmnt-dd" class="collapse">
+                        <li>
+                            <a href="#">Organisation</a>
+                        </li>
+                        <li>
+                            <a href="#">Team</a>
+                        </li>
+                        <li>
+                            <a href="#">Groups</a>
+                        </li>
+                        <li>
+                            <a href="#">Roles</a>
+                        </li>
+                        <li>
+                            <a href="#">Permissions</a>
+                        </li>
+                        <li>
+                            <a href="#">Password policy</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#admin-dd"><i class="fa fa-fw fa-cog"></i> Admin <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="admin-dd" class="collapse">
+                        <li>
+                            <a href="organisation.html">Organisation</a>
+                        </li>
+                        <li>
+                            <a href="sites.html">Sites</a>
+                        </li>
+                        <li>
+                            <a href="departments.html">Departments</a>
+                        </li>
+                        <li>
+                            <a href="app-settings.html">App Settings</a>
+                        </li>
+                        <li>
+                            <a onclick="initBizHoursData()">Init Data*</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+    <!-- Top Menu Items -->
+    <ul class="nav top-nav">
+        <li>
+            <form class="navbar-form ">
+                <input type="text" class="form-control" placeholder="Search...">
+            </form>
+        </li>
+        <li class="dropdown user-profile">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+        <!-- Message Section -->
+        <section class="message-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <a href="" class="show-help">Show help</a>
+                </div>
+            </div>
+        </section>
+        <!-- /Message Section -->
+        <!-- Main Section -->
+        <section class="main-section">
+
+            <div class="page-header">
+
+
+                <div class="col-md-8">
+                    <h4 class="page-name">Customers</h4>
+
+                    <ol class="breadcrumb">
+                        <li><a href="#">CustomerIQ</a></li>
+                        <li><a href="customers.html">Customers</a></li>
+                    </ol>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="page-actions">
+                        <a class="btn control-btn control-btn-def enableEdit"
+                           onclick="enableEditing(this)">Enable Editing</a>
+                        <a class="btn control-btn control-btn-def disableEdit"
+                           onclick="disableEditing(this)">Disable Editing</a>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+            <div id="customers-page" class="page-content">
+
+                <div class="col-md-12">
+                   <section class="deps-data">
+                        <table class="table table-bordered table-hover" id="departments-table" width="100%"
+                               cellspacing="0">
+                            <thead>
+                            <tr>
+                                <td><b>ID</td>
+                                <td><b>Business Name</td>
+                                <td><b>Number of <br>principals</td>
+                                <td><b>Key principle</td>
+                                <td><b>Occupation</td>
+                                <td><b>Type</td>
+                                <td><b>CRN</td>
+                                <td><b>Date of <br>application</td>
+                                <td><b>Channel</td>
+                                <td><b>ID uploaded</td>
+                                <td><b>State</td>
+                                <td><b>Verified channel</td>
+                                <td><b>Verifiied by</td>
+                                <td><b>Telephone</td>
+                                <td><b>Email address</td>
+                                <td><b>Mobile</td>
+                                <td class="actions-td">
+                                    Actions
+                                </td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr id="cl1-tr">
+                                <td class="cl1-id-td"><a href="customer.html">2201</a></td>
+                                <td class="cl1-name-td">Above Technology Ltd</td>
+                                <td class="cl1-princnum-td">1</td>
+                                <td class="cl1-keyprinc-td">John Smith</td>
+                                <td class="cl1-ocup-td">Director</td>
+                                <td class="cl1-type-td">Private Company Limited by shares</td>
+                                <td class="cl1-crn-td">9032327</td>
+                                <td class="cl1-appdate-td">01.06.2016</td>
+                                <td class="cl1-channel-td">Web</td>
+                                <td class="cl1-ids-td">Yes</td>
+                                <td class="cl1-state-td"></td>
+                                <td class="cl1-verchannel-td">Not verified</td>
+                                <td class="cl1-verby-td"></td>
+                                <td class="cl1-tel-td">07821236265</td>
+                                <td class="cl1-email-td">a.kudic@gmail.com</td>
+                                <td class="cl1-mob-td">07821236265</td>
+                                <td class="actions-td">
+                                    <select class="actions-select" onchange="depActionSelect(this);">
+                                        <option value="Actions">Actions</option>
+                                        <option value="Edit">Edit</option>
+                                        <option value="Delete">Delete</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr id="cl2-tr">
+                                <td class="cl2-id-td"><a href="#">2202</a></td>
+                                <td class="cl2-name-td">law Partners</td>
+                                <td class="cl2-princnum-td">9</td>
+                                <td class="cl2-keyprinc-td">Rose Watts</td>
+                                <td class="cl2-ocup-td">Accountant</td>
+                                <td class="cl2-type-td">Private Company Limited by Guarantee</td>
+                                <td class="cl2-crn-td">1032326</td>
+                                <td class="cl2-appdate-td">01.06.2016</td>
+                                <td class="cl2-channel-td">Branch</td>
+                                <td class="cl2-ids-td">Yes</td>
+                                <td class="cl2-state-td"></td>
+                                <td class="cl2-verchannel-td">Manual</td>
+                                <td class="cl2-verby-td"><a href="#">priyank.dash</a></td>
+                                <td class="cl2-tel-td">07821236265</td>
+                                <td class="cl2-email-td">a.kudic@gmail.com</td>
+                                <td class="cl2-mob-td">07821236265</td>
+                                <td class="actions-td">
+                                    <select class="actions-select" onchange="depActionSelect(this);">
+                                        <option value="Actions">Actions</option>
+                                        <option value="Edit">Edit</option>
+                                        <option value="Delete">Delete</option>
+                                    </select>
+                                </td>
+                            </tr>
+                             <tr id="cl3-tr">
+                                <td class="cl3-id-td"><a href="#">2203</a></td>
+                                <td class="cl3-name-td">Top Retail</td>
+                                <td class="cl3-princnum-td">2</td>
+                                <td class="cl3-keyprinc-td">Joan Collins</td>
+                                <td class="cl3-ocup-td">Managing director</td>
+                                <td class="cl3-type-td">Subsidiary of a Listed Company</td>
+                                <td class="cl3-crn-td">9066326</td>
+                                <td class="cl3-appdate-td">01.06.2016</td>
+                                <td class="cl3-channel-td">Web</td>
+                                <td class="cl3-ids-td">Yes</td>
+                                <td class="cl3-state-td"></td>
+                                <td class="cl3-verchannel-td">Onfido</td>
+                                <td class="cl3-verby-td"></td>
+                                <td class="cl3-tel-td">07821236265</td>
+                                <td class="cl3-email-td">a.kudic@gmail.com</td>
+                                <td class="cl3-mob-td">07821236265</td>
+                                <td class="actions-td">
+                                    <select class="actions-select" onchange="depActionSelect(this);">
+                                        <option value="Actions">Actions</option>
+                                        <option value="Edit">Edit</option>
+                                        <option value="Delete">Delete</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr id="cl4-tr">
+                                <td class="cl4-id-td"><a href="#">2204</a></td>
+                                <td class="cl4-name-td">Pay Mobile</td>
+                                <td class="cl4-princnum-td">2</td>
+                                <td class="cl4-keyprinc-td">Ian Johnson</td>
+                                <td class="cl4-ocup-td">Finance director</td>
+                                <td class="cl4-type-td">Subsidiary of a Regulated Financial Institution</td>
+                                <td class="cl4-crn-td">9067726</td>
+                                <td class="cl4-appdate-td">01.06.2016</td>
+                                <td class="cl4-channel-td">Phone</td>
+                                <td class="cl4-ids-td">Yes</td>
+                                <td class="cl4-state-td"></td>
+                                <td class="cl4-verchannel-td">Manual</td>
+                                <td class="cl4-verby-td"><a href="#">lisa.sterling</a></td>
+                                <td class="cl4-tel-td">07821236265</td>
+                                <td class="cl4-email-td">a.kudic@gmail.com</td>
+                                <td class="cl4-mob-td">07821236265</td>
+                                <td class="actions-td">
+                                    <select class="actions-select" onchange="depActionSelect(this);">
+                                        <option value="Actions">Actions</option>
+                                        <option value="Edit">Edit</option>
+                                        <option value="Delete">Delete</option>
+                                    </select>
+                                </td>
+                            </tr>
+                              </tr>
+                            <tr id="cl5-tr">
+                                <td class="cl5-id-td"><a href="#">2205</a></td>
+                                <td class="cl5-name-td">FX Money Ltd</td>
+                                <td class="cl5-princnum-td">37</td>
+                                <td class="cl5-keyprinc-td">Antonio Betty</td>
+                                <td class="cl5-ocup-td">Director</td>
+                                <td class="cl5-type-td">Regulated EU or Equivalent Country Financial Services Firms</td>
+                                <td class="cl5-crn-td">1168826</td>
+                                <td class="cl5-appdate-td">01.06.2016</td>
+                                <td class="cl5-channel-td">Web</td>
+                                <td class="cl5-ids-td">No</td>
+                                <td class="cl5-state-td"></td>
+                                <td class="cl5-verchannel-td">Not verified</td>
+                                <td class="cl5-verby-td"></td>
+                                <td class="cl5-tel-td">07821236265</td>
+                                <td class="cl5-email-td">a.kudic@gmail.com</td>
+                                <td class="cl5-mob-td">07821236265</td>
+                                <td class="actions-td">
+                                    <select class="actions-select" onchange="depActionSelect(this);">
+                                        <option value="Actions">Actions</option>
+                                        <option value="Edit">Edit</option>
+                                        <option value="Delete">Delete</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </section>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- /Main Section -->
+        <!-- Info Section -->
+        <section class="info-section">
+            <div class="copy-right text-right">CustomerIQ - 2016 Copyright</div>
+        </section>
+        <!-- /Info Section -->
+    </div>
+    <!-- /.container-fluid -->
+    <!-- /#page-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+<div id="add-dep-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content add-dep-modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Add Customer</h4>
+            </div>
+            <div class="modal-body add-cl-modal-body">
+                <div class="form-group">
+                    <label for="add-cl-name">Business Name</label>
+                    <input type="text" class="form-control" id="add-cl-name">
+                </div>
+                <div class="form-group">
+                    <label for="add-cl-princnum">Number of principals</label>
+                    <input type="text" class="form-control" id="add-cl-princnum">
+                </div>
+                <div class="form-group">
+                    <label for="add-dep-assignee" class="control-label">Default Assignee</label>
+                    <select id="add-dep-assignee" class="form-control">
+                        <option value="Aleksandar Kudic">Aleksandar Kudic</option>
+                        <option value="Person 1">Person 1</option>
+                        <option value="Person 2">Person 2</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="add-dep-users">Users</label>
+                    <input type="text" class="form-control" id="add-dep-users">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class=" btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class=" btn control-btn control-btn-add" onclick="addDep(this);">Add</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+
+<div id="edit-dep-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content edit-dep-modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Edit Department</h4>
+            </div>
+            <div class="modal-body edit-dep-modal-body">
+                <div class="form-group">
+                    <label for="edit-dep-name">Name</label>
+                    <input type="text" class="form-control" id="edit-dep-name">
+                </div>
+                <div class="form-group">
+                    <label for="edit-dep-desc">Description</label>
+                    <input type="text" class="form-control" id="edit-dep-desc">
+                </div>
+                <div class="form-group">
+                    <label for="edit-dep-assignee" class="control-label">Default Assignee</label>
+                    <select id="edit-dep-assignee" class="form-control">
+                        <option value="Aleksandar Kudic">Aleksandar Kudic</option>
+                        <option value="Person 1">Person 1</option>
+                        <option value="Person 2">Person 2</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="edit-dep-users">Users</label>
+                    <input type="text" class="form-control" id="edit-dep-users">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class=" btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class=" btn control-btn control-btn-save" data-trID=""
+                        onclick="saveDep(this)">Save
+                </button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<div id="del-dep-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content del-dep-modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Delete Department</h4>
+            </div>
+            <div class="modal-body del-dep-modal-body">
+                <p>Are You Sure You Want to Delete Department <span class="del-dep-name"></span></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class=" btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class=" btn control-btn control-btn-del" data-trID="" onclick="delDep(this)">
+                    Delete</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<!-- JS -->
+<script src="js/libs/jquery.min.js"></script>
+<script src="js/libs/bootstrap.min.js"></script>
+<script src="js/libs/jquery.dataTables.min.js"></script>
+<script src="js/libs/dataTables.bootstrap.min.js"></script>
+<script src="js/libs/jquery.storageapi.min.js"></script>
+<script src="js/libs/nprogress.js"></script>
+<script src="js/libs/timezones.full.min.js"></script>
+<script src="js/dashboard-functions.js"></script>
+<script src="js/admin-functions.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#departments-table').DataTable({
+            "displayStart": 20,
+            "dom": "<'row'<'col-sm-9'f><'col-sm-3'l>>" +
+            "<'row'<'col-sm-12'tr>>" +
+            "<'row'<'col-sm-5'i><'col-sm-7'p>>"
+        } );
+    } );
+</script>
+</body>
+
+</html>

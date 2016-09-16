@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Activate Account | CustomerIQ</title>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+   <div class="container">
+
+      <form class="form-signin" id="activateAccForm" action="" method="POST">
+        <h2 class="form-signin-heading">CustomerIQ</h2>
+        <h3 class="form-signin-heading">Create a new password</h3>
+        <p class="form-signin-heading">Your username is john.smith@rbs.com</p>
+
+        <input type="password" id="password" name="password" class="form-control" placeholder="Password" required autofocus>
+
+        <input type="password" id="rePassword" name="rePassword" class="form-control" placeholder="Re-enter Password" required>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Activate account</button>
+      </form>
+
+    </div> <!-- /container -->
+
+    <!-- JS -->
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/jquery.validate.min.js"></script>
+    <script>
+        $.validator.setDefaults({
+            submitHandler: function() {
+                alert("submitted!");
+            }
+        });
+        $("#activateAccForm").validate({
+            rules: {
+                password: {
+                    required: true
+                },
+                rePassword: {
+                    required: true,
+                    equalTo: "#password"
+                }
+            },
+            messages: {
+
+                password: {
+                    required: "Please provide a password"
+                },
+                confirm_password: {
+                    required: "Please provide a password",
+                    equalTo: "Please enter the same password as above"
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Dashboard | CustomerIQ</title>
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<span class='nprogress-logo fade out'></span>
+<div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse side-nav" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">CustomerIQ</a>
+        </div>
+        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav menu-items">
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#dash-dd"><i class="fa fa-fw fa-dashboard"></i> Dashboard <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="dash-dd" class="collapse">
+                        <li class="active">
+                            <a href="#">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#">My Tasks</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#custom-dd"><i class="fa fa-fw fa-university"></i> Customers <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="custom-dd" class="collapse">
+                        <li>
+                            <a href="customers.html">Live</a>
+                        </li>
+                        <li>
+                            <a href="#">Monitoring</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#kyc-dd"><i class="fa fa-fw fa-check"></i> KYC <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="kyc-dd" class="collapse">
+                        <li>
+                            <a href="#">Companies House</a>
+                        </li>
+                        <li>
+                            <a href="#">Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#com-dd"><i class="fa fa-fw fa-envelope"></i> Communication <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="com-dd" class="collapse">
+                        <li>
+                            <a href="#">Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#wflow-dd"><i class="fa fa-fw fa-sitemap"></i> Workflow <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="wflow-dd" class="collapse">
+                        <li>
+                            <a href="#">Rules</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#rep-dd"><i class="fa fa-fw fa-check"></i> Reports <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="rep-dd" class="collapse">
+                        <li>
+                            <a href="#">Report 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Report 2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#log-dd"><i class="fa fa-fw fa-file-text-o"></i> Logs <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="log-dd" class="collapse">
+                        <li>
+                            <a href="#">Audit logs</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#usermngmnt-dd"><i class="fa fa-fw fa-group"></i> User Management <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="usermngmnt-dd" class="collapse">
+                        <li>
+                            <a href="#">Organisation</a>
+                        </li>
+                        <li>
+                            <a href="#">Team</a>
+                        </li>
+                        <li>
+                            <a href="#">Groups</a>
+                        </li>
+                        <li>
+                            <a href="#">Roles</a>
+                        </li>
+                        <li>
+                            <a href="#">Permissions</a>
+                        </li>
+                        <li>
+                            <a href="#">Password policy</a>
+                        </li>
+                    </ul>
+                </li>
+                    <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#admin-dd"><i class="fa fa-fw fa-cog"></i> Admin <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="admin-dd" class="collapse">
+                        <li>
+                            <a href="organisation.html">Organisation</a>
+                        </li>
+                        <li>
+                            <a href="sites.html">Sites</a>
+                        </li>
+                        <li>
+                            <a href="departments.html">Departments</a>
+                        </li>
+                        <li>
+                            <a href="app-settings.html">App Settings</a>
+                        </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+    <!-- Top Menu Items -->
+    <ul class="nav top-nav">
+        <li>
+            <form class="navbar-form ">
+                <input type="text" class="form-control" placeholder="Search...">
+            </form>
+        </li>
+        <li class="dropdown user-profile">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+        <!-- Message Section -->
+        <section class="message-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <a href="" class="show-help">Show help</a>
+                </div>
+            </div>
+        </section>
+        <!-- /Message Section -->
+        <!-- Main Section -->
+        <section class="main-section page-bg-gray" id="customer-page">
+
+            <div class="customer-header">
+
+
+                    <div class="col-md-8">
+                        <i class=" fa fa-university fa-5x pull-left"></i>
+                        <h4 class="customer-name">Above Tech Ltd<span class="customer-member-name hide"></span></h4><br>
+
+                        <ol class="breadcrumb">
+                            <li><a href="#">CustomerIQ</a></li>
+                            <li><a href="#">Customer</a></li>
+                            <li class="active comp-crumb">Above Tech Ltd</li>
+                        </ol>
+                        <span class="label label-default member-type-label compTypeFields"></span>
+                        <span class="label label-danger member-state-label">Not verified</span>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="customer-actions">
+                            <div class="btn-group customer-actions-btn-group">
+                                <button type="button" class="btn btn-info">Actions</button>
+                                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Approve</a></li>
+                                    <li><a href="#">Reject</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Edit</a></li>
+                                    <li><a href="#" onclick="showUploadIDsModal();">Upload IDs</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Archive</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group customer-msg-btn-group">
+                                <button type="button" class="btn btn-purple">Message</button>
+                                <button type="button" class="btn btn-purple dropdown-toggle" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                    <span class="caret"></span>
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Account Approved</a></li>
+                                    <li><a href="#">Account rejected</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Manual review</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+            </div>
+            <div class="customer-info">
+            <div class="member-select">
+                <div class="col-sm-12">
+                    <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="bg-grey">
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Date of application</th>
+                            <th>Channel</th>
+                            <th>State</th>
+                            <th>Verified channel</th>
+                            <th>Verified by</th>
+                            <th>Shareholding</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="info">
+                            <td><a onclick="selectMember.call(this)" class="orgNameFields">Above Tech Ltd</a></td>
+                            <td class="compTypeFields"></td>
+                            <td>01.06.2016.</td>
+                            <td>Web</td>
+                            <td>
+                                <p class="verified verified-false">Not verified</p>
+                            </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td>
+                                <select class="member-select-action">
+                                    <option value="">Select</option>
+                                    <option value="Approve">Approve</option>
+                                    <option value="Reject">Reject</option>
+                                    <option value="Reject">Upload</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a onclick="selectMember.call(this)">John Smith</a> (Director)</td>
+                            <td>New customer</td>
+                            <td>01.06.2016.</td>
+                            <td>Web</td>
+                            <td>
+                                <p class="verified verified-false">Not verified</p>
+                            </td>
+                            <td> - </td>
+                            <td> - </td>
+                            <td>30%</td>
+                            <td>
+                                <select class="member-select-action">
+                                    <option value="">Select</option>
+                                    <option value="Approve">Approve</option>
+                                    <option value="Reject">Reject</option>
+                                    <option value="Reject">Upload</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a  onclick="selectMember.call(this)">Rose Watts</a> (Shareholder)</td>
+                            <td>Existing</td>
+                            <td>01.06.2016.</td>
+                            <td>Web</td>
+                            <td>
+                                <p class="verified verified-true">Verified</p>
+                            </td>
+                            <td>Onifido</td>
+                            <td>Onifido</td>
+                            <td>70%</td>
+                            <td>
+                                <select class="member-select-action">
+                                    <option value="">Select</option>
+                                    <option value="Approve">Approve</option>
+                                    <option value="Reject">Reject</option>
+                                    <option value="Reject">Upload</option>
+                                </select>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+                <div class="col-lg-6 main-details">
+                    <ul class="list-group">
+                        <li class="list-group-item">Business /Organisation name<span class="pull-right orgNameFields">Above Tech
+                            Ltd</span></li>
+                        <li class="list-group-item">Telephone number<span class="pull-right orgPhoneFields"></span></li>
+                        <li class="list-group-item">Email address<span class="pull-right orgEmailFields">john@above.com</span></li>
+                        <li class="list-group-item">Mobile number<span class="pull-right orgMobPhoneFields">07821 828 990</span></li>
+                        <li class="list-group-item">Companies House registration number<span
+                                class="pull-right compRegNumberFields">09256632
+                            </span></li>
+                        <li class="list-group-item">Building name/number<span class="pull-right buildingNameNumberFields">41</span></li>
+                        <li class="list-group-item">Street<span class="pull-right streetNameFields">Ranoch road</span></li>
+                        <li class="list-group-item">Town / City<span class="pull-right townCityNameFields">London</span></li>
+                        <li class="list-group-item">Country / State<span class="pull-right countryStateNameFields"></span></li>
+                        <li class="list-group-item">Country<span class="pull-right countryNameFields"></span></li>
+                        <li class="list-group-item">Post Code<span class="pull-right postCoodeFields">W6 9SU</span></li>
+                        <li class="list-group-item">Trading Name and/or any other aliases<span
+                                class="pull-right tradingNameFields">Above Tech</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-6" style="padding-right: 15px">
+                    <!-- Nav tabs -->
+                    <div class="card">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#activity" aria-controls="activity" role="tab" data-toggle="tab">
+                                    Activity (<span class="msg-count">2</span>)
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#notes" aria-controls="notes" role="tab" data-toggle="tab">
+                                    Notes (<span class="note-count">0</span>)
+                            </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#tasks" aria-controls="tasks" role="tab" data-toggle="tab">
+                                    Tasks (<span class="task-count">1</span>)
+                                </a>
+                            </li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+
+                            <!-- Activity Tab -->
+                            <div role="tabpanel" class="tab-pane active" id="activity">
+                                <div class="qa-message-list" id="wallmessages">
+                                    <div class="message-item">
+                                        <div class="message-inner">
+                                            <div class="message-head clearfix">
+                                                <div class="qa-message-content">
+                                                    <span>system</span> sent
+                                                    <span>email "Account pending"</span> to
+                                                    <span>Above Tech Ltd</span>
+                                                </div>
+                                            </div>
+                                            <div class="user-detail">
+                                                <div class="post-time">
+                                                    <p><i class="fa fa-clock-o"></i> 10.06.2016 18:30:00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="message-item">
+                                        <div class="message-inner">
+                                            <div class="message-head clearfix">
+                                                <div class="qa-message-content">
+                                                    <span>Above Tech Ltd</span> filed application
+                                                </div>
+                                            </div>
+                                            <div class="user-detail">
+                                                <div class="post-time">
+                                                    <p><i class="fa fa-clock-o"></i> 10.06.2016 18:30:00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /Activity Tab -->
+
+                            <!-- Notes Tab -->
+                            <div role="tabpanel" class="tab-pane" id="notes">
+                                <div class="note-list">
+                                    <ul class="list-group">
+
+                                    </ul>
+                                </div>
+                                <form id="add-note-form" class="note-form">
+                                    <div class="note-content col-sm-10">
+                                        <input type="text" class="form-control" name="noteText" id="note-text-input"
+                                               placeholder="Add notes">
+                                        <input type="text" style="display: none;" />
+                                    </div>
+                                    <div class="note-input-control col-sm-2">
+                                        <a class=" btn control-btn control-btn-add" onclick="addNote()">Add
+                                        </a>
+                                    </div>
+                                    <div class="note-extra col-sm-12">
+                                        <div class="note-files">
+                                            <a href="">Attach file</a>
+                                        </div>
+                                        <div class="note-private pull-right">
+                                            <input type="checkbox" value=""> Private note
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <!-- /Notes Tab -->
+
+                            <!-- Tasks Tab -->
+                            <div role="tabpanel" class="tab-pane" id="tasks">
+                                <form id="add-task-form" class="task-form col-sm-12">
+                                    <div class="task-content">
+                                        <input type="text" class="form-control col-sm-12"
+                                               id="task-title-input"
+                                               placeholder="Task name">
+                                        <textarea class="form-control col-sm-12" id="task-desc-input"
+                                                  placeholder="Task description"></textarea>
+                                    </div>
+                                    <div class="task-meta">
+                                        <div class="col-xs-5 datepicker">
+                                            <div class='input-group date' id='datetimepicker-add-task'>
+                                                <div class="input-group-addon"><i class="fa fa-clock-o"></i></div>
+                                                <input type='text' class="form-control" />
+                                                    <span class="input-group-addon">
+                                                    <span class="fa fa-calendar"></span>
+                                                    </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4 assigned-to">
+                                            <div class="input-group pull-right">
+                                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                                <select class="form-control" id="task-ass-user-select">
+                                                    <option value="No person assigned">Assign to</option>
+                                                    <option value="Person 1">Person 1</option>
+                                                    <option value="Person 2">Person 2</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <a class=" btn control-btn control-btn-add"
+                                                    onclick="addTask()">Add
+                                            </a>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="col-sm-12 task-list">
+                                    <ul class="list-group">
+                                        <li class="list-group-item task-item">
+                                            <div class="row" id="task-0" data-toggle="task-dd-0">
+                                                <div class="task-title">
+                                                    <input type="checkbox" value=""> <strong>Task example title</strong>
+                                                </div>
+                                                <div class="task-detail">
+                                                    <div class="post-time">
+                                                        <p><i class="fa fa-clock-o"></i> 10.06.2016 18:30:00
+                                                        </p>
+                                                    </div>
+                                                    <div class="assigned-user">
+                                                        <p><i class="fa fa-user"></i><a href="">Lisa Sterling</a></p>
+                                                    </div>
+                                                    <i class="fa fa-chevron-down pull-right toggle"></i>
+                                                </div>
+                                            </div>
+                                            <div id="task-dd-0" class="task-item-content">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores blanditiis deleniti dignissimos distinctio enim explicabo inventore iste necessitatibus non perspiciatis quas quia, quis ratione reprehenderit sit sunt suscipit tenetur.
+                                                <div class="task-content-control text-right">
+                                                    <button type="button" class=" btn control-btn control-btn-del">Delete
+                                                    </button>
+                                                    <button class=" btn control-btn control-btn-def" data-toggle="modal" data-target="#edit-task-modal">Edit
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /Tasks Tab -->
+
+                        </div>
+                    </div>
+                </div>
+            <div class="princ-details">
+                <div class="col-md-12">
+                    <h4>Principal Details</h4>
+                    <div class="table-responsive">
+                    <table class="table table-bordered" id="princ-details-table">
+                        <thead class="bg-grey">
+                        <tr>
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Date of application</th>
+                            <th>Channel</th>
+                            <th>State</th>
+                            <th>Verified channel</th>
+                            <th>Verified by</th>
+                            <th>Is id uploaded</th>
+                            <th>Shareholding</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td><a onclick="selectMember.call(this)">John Smith</a> (Director) </td>
+                            <td>New customer</td>
+                            <td>01.06.2016.</td>
+                            <td>Web</td>
+                            <td>
+                                <input type="checkbox" value="">
+                            </td>
+                            <td>Not verified</td>
+                            <td></td>
+                            <td>No</td>
+                            <td>30%</td>
+                        </tr>
+                        <tr>
+                            <td><a onclick="selectMember.call(this)">Rose Watts</a> (Shareholder) </td>
+                            <td>Existing</td>
+                            <td>01.06.2016.</td>
+                            <td>Web</td>
+                            <td>
+                                <input type="checkbox" value="" checked>
+                            </td>
+                            <td>Onifido</td>
+                            <td>Onifido</td>
+                            <td>n/a</td>
+                            <td>70%</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+
+            </div>
+            <div class="company-details">
+                    <div class="col-md-12">
+                        <div class="card card-details">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#busDetails" aria-controls="busDetails" role="tab" data-toggle="tab">
+                                    Business Details
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#bankRequ" aria-controls="bankRequ" role="tab" data-toggle="tab">
+                                    Banking Requirements
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#kyc" aria-controls="kyc" role="tab" data-toggle="tab">
+                                    KYC - Complanies House (<span class="kycCount">2</span>)
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#commHistory" aria-controls="commHistory" role="tab" data-toggle="tab">
+                                    Communication History (<span class="commHistoryCount">1</span>)
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#docs" aria-controls="docs" role="tab" data-toggle="tab">
+                                    Documents (<span class="docsCount">1</span>)
+                                </a>
+                            </li>
+
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <!-- Business Details Tab -->
+                            <div role="tabpanel" class="tab-pane active" id="busDetails">
+                                <h4>Main Details</h4>
+                                <table class="table table-bordered table-hover company-details-table">
+                                    <thead class="bg-grey">
+                                    <tr>
+                                        <th width="50%">Form fields</th>
+                                        <th width="50%">Customer answers</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Organisation Type</td>
+                                        <td id="compType-tr" ></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Business/Organisation name<span class="red">*</span></td>
+                                        <td id="orgName-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Business/Organisation telephone number<span class="red">*</span></td>
+                                        <td id="orgPhone-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Business/organisation e-mail address<span class="red">*</span></td>
+                                        <td id="orgEmail-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mobile number<span class="red">*</span></td>
+                                        <td id="orgMobPhone-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Companies House registration number<span class="red">*</span></td>
+                                        <td id="compRegNumber-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Building name/number<span class="red">*</span></td>
+                                        <td id="buildingNameNumber-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Street<span class="red">*</span></td>
+                                        <td id="streetName-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Town /City<span class="red">*</span></td>
+                                        <td id="townCityName-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>County/State</td>
+                                        <td id="countryStateName-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Country</td>
+                                        <td id="countryName-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Post Code<span class="red">*</span></td>
+                                        <td id="postCoode-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Trading Name and/or any other aliases<span class="red">*</span></td>
+                                        <td id="tradingName-tr"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                    <h4>Trading Address</h4>
+                                <table class="table table-bordered table-hover company-details-table">
+                                    <thead class="bg-grey">
+                                    <tr>
+                                        <th width="50%">Form fields</th>
+                                        <th width="50%">Customer answers</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Is your trading address different from your registered address?*<br>
+                                            <strong>If 'Yes' please provide details  </strong></td>
+                                        <td id="diffTradingAddress-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If 'Yes') Building name/number<span class="red">*</span></td>
+                                        <td id="buildingNameNumber1-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If 'Yes') Street<span class="red">*</span></td>
+                                        <td id="streetName1-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If 'Yes') Town /City<span class="red">*</span></td>
+                                        <td id="townCityName1-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If 'Yes') County/State</td>
+                                        <td id="countryStateName1-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If 'Yes') Country</td>
+                                        <td id="countryName1-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If 'Yes') Post Code<span class="red">*</span></td>
+                                        <td id="postCoode1-tr"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                   <h4>Statement and Correspondence Address</h4>
+                                <table class="table table-bordered table-hover company-details-table">
+                                    <thead class="bg-grey">
+                                    <tr>
+                                        <th width="50%">Form fields</th>
+                                        <th width="50%">Customer answers</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Contact name/department for correspondence</td>
+                                        <td id="contactName-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>What address would you like your statements and correspondence sent
+                                            to?<span class="red">*</span><br>
+                                            <strong>If 'Other' please provide details </strong></td>
+                                        <td id="sendAddress-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If Other) Building name/number<span class="red">*</span></td>
+                                        <td id="buildingNameNumber2-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If Other) Street<span class="red">*</span></td>
+                                        <td id="streetName2-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If Other) Town /City<span class="red">*</span></td>
+                                        <td id="townCityName2-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If Other) County/State</td>
+                                        <td id="countryStateName2-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If Other) Country</td>
+                                        <td id="countryName2-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If Other) Post Code<span class="red">*</span></td>
+                                        <td id="postCoode2-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Is your business a start-up or and existing entity?<span class="red">*</span></td>
+                                        <td id="bizType-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Is your business premises owned or leased?<span class="red">*</span></td>
+                                        <td id="bizPremises-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Is your business a franchise?<span class="red">*</span></td>
+                                        <td id="bizFranchise-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If 'Yes') What type of franchise it is?</td>
+                                        <td id="franchiseType-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Is your business dealing with import or export?<span class="red">*</span></td>
+                                        <td id="importExport-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Please indicate the number of full-time employees in your business/ organisation<span class="red">*</span></td>
+                                        <td id="fullEmpNumber-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Please indicate the number of part-time employees in your business/ organisation<span class="red">*</span></td>
+                                        <td id="partEmpNumber-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Will RBS be your main bank for business?<span class="red">*</span></td>
+                                        <td id="rbsMain-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Provide your actual or anticipated annual profit before tax for this financial year<span class="red">*</span></td>
+                                        <td id="annualProfit-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>When does/will your financial year end?<span class="red">*</span></td>
+                                        <td id="finYearEnd-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>When was your business established/ incorporated?<span class="red">*</span></td>
+                                        <td id="estabDate-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>What date did you / will you start trading?<span class="red">*</span></td>
+                                        <td id="tradingStartDate-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Country of registration/formation<span class="red">*</span></td>
+                                        <td id="regCountry-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>In which country is your business resident for tax purposes?<span class="red">*</span></td>
+                                        <td id="taxCountry-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Please provide Tax ID number</td>
+                                        <td id="taxID-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Is your business resident for tax purposes in any other countries?<span class="red">*</span></td>
+                                        <td id="taxOtherCountry-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If 'Yes') please provide details of additional tax residencies</td>
+                                        <td id="taxCountry1-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If 'Yes') please provide Tax ID number</td>
+                                        <td id="taxID1-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>What is your Business's main trading activity(Describe in detail the trading activity)<span class="red">*</span></td>
+                                        <td id="mainActivity-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Will you do your own accounting?<span class="red">*</span></td>
+                                        <td id="ownAcc-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Is your business listed on a public stock exchange?<span class="red">*</span></td>
+                                        <td id="stockEx-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If 'Yes') In which country is it listed?</td>
+                                        <td id="stockExCountry-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If 'Yes') In which market is it listed?</td>
+                                        <td id="stockExMarket-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Are all creditors and debtors up to date?<span class="red">*</span></td>
+                                        <td id="creditordUptodate-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Are you aware of any Adverse Bureau Data e.g County Court Judgements (CCJs) registered against any of the authorised signatories on the account?<span class="red">*</span></td>
+                                        <td id="ccj-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If 'Yes') In which country is it listed?</td>
+                                        <td id="ccjDetails-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Does your business/organisation have any VAT, PAYE, NIC or TAX arrears, or active legal proceedings?<span class="red">*</span></td>
+                                        <td id="taxArrears-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If 'Yes') please provide details here</td>
+                                        <td id="taxArrears3-tr"></td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /Business Details Tab -->
+
+                            <!-- Banking Requirements Tab -->
+                            <div role="tabpanel" class="tab-pane" id="bankRequ">
+                                <table class="table table-bordered table-hover bankRequ-table">
+                                    <thead class="bg-grey">
+                                    <tr>
+                                        <th width="50%">Form fields</th>
+                                        <th width="50%">Customer answers</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Which branch would you like to open your business bank account at?*</td>
+                                        <td id="bizBranch-tr"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <strong>Click here to find your nearest branch</strong>
+
+                                <h4>Your Current Account</h4>
+                                <table class="table table-bordered table-hover bankRequ-table">
+                                    <thead class="bg-grey">
+                                    <tr>
+                                        <th width="50%">Form fields</th>
+                                        <th width="50%">Customer answers</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Is cheque book required for this account</td>
+                                        <td id="chequeBook-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If selected) - Please select cheque book type</td>
+                                        <td id="chequeBookType-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Is pay in book required for this account</td>
+                                        <td id="payinBook-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If selected) - Please select pay in book type</td>
+                                        <td id="payinBookType-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Day of the Month you would like your statement processed*</td>
+                                        <td id="processDay-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Statement delivery method*</td>
+                                        <td id="delivMethod-tr"></td>
+                                    </tr>
+                                    <!--<tr>-->
+                                        <!--<td>As part of our business account package you are registered for our free online or telephone banking services. Please tick the box if these services are not required*</td>-->
+                                        <!--<td></td>-->
+                                    <!--</tr>-->
+                                    <tr>
+                                        <td>Would you like a savings account ?*</td>
+                                        <td id="savingAcc-tr"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <h4>Business Savings Account up to £2million turnover</h4>
+                                <table class="table table-bordered table-hover bankRequ-table">
+                                    <thead class="bg-grey">
+                                    <tr>
+                                        <th width="50%">Form fields</th>
+                                        <th width="50%">Customer answers</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <!--<tr>-->
+                                        <!--<td>Please tick the box to confirm that you have read & downloaded Business Banking Terms for Safe Bank savings accounts (PDF File 420KB)</td>-->
+                                        <!--<td></td>-->
+                                    <!--</tr>-->
+                                    <tr>
+                                        <td>Which account would you like to apply for?</td>
+                                        <td id="accountType-tr"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                 <h4>Your borrowing</h4>
+                                <table class="table table-bordered table-hover bankRequ-table">
+                                    <thead class="bg-grey">
+                                    <tr>
+                                        <th width="50%">Form fields</th>
+                                        <th width="50%">Customer answers</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Do you require an overdraft for use on this account?*</td>
+                                        <td id="overdraft-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>(If 'Yes') please specify how much (£)</td>
+                                        <td id="overdraftAmount-tr"></td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                    <p>"All finance is subject to status. You may need to provide further information.
+                                This does not constitute a binding offer or commitment by the Bank. Any formal offer would be subject to status, credit approval and the completion of documentation satisfactory to the Bank."
+                                    </p>
+                                    <p>Security may be required. Product fees may apply. Over 18s only.</p>
+                                    <p>"ANY PROPERTY USED AS SECURITY, WHICH MAY INCLUDE YOUR HOME, MAY BE
+                                            REPOSSESSED IF YOU DO NOT KEEP UP REPAYMENTS ON A MORTGAGE OR OTHER DEBT
+                                        SECURED ON IT"</p>
+                                    <h4>Your protection</h4>
+
+                                        <p>It is important you consider carefully how you can protect your business
+                                            against unforeseen circumstances to allow you to plan and run your
+                                            business with confidence.</p>
+                                        <p>For your free no obligation quote from Safe Bank Business Insurance
+                                Services, we will arrange for you to speak to the Business Insurance Team when you
+                                            open the account. Alternatively, you may wish to call them now on 0800 123123 (Monday to Friday 8am to 8pm or Saturday 10am to 1pm, excluding public holidays).</p>
+                                        <p>Please quote the reference number 'current'. Calls may be recorded.</p>
+                                        <strong>Please provide the following account details if you wish to open an additional business current account using the same operating mandate. </strong>
+                                <table class="table table-bordered table-hover bankRequ-table">
+                                    <thead class="bg-grey">
+                                    <tr>
+                                        <th width="50%">Form fields</th>
+                                        <th width="50%">Customer answers</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+
+
+                                    <tr>
+                                        <td>Would you like to open an additional business account using the same operating mandate?*</td>
+                                        <td id="additionalBiz-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Title of additional account</td>
+                                        <td id="additionalAcc-tr"></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                   <strong>We also offer a mobile business banking app. click <a>here</a>
+                                            for details. </strong>
+                                <table class="table table-bordered table-hover bankRequ-table">
+                                    <thead class="bg-grey">
+                                    <tr>
+                                        <th width="50%">Form fields</th>
+                                        <th width="50%">Customer answers</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Would you like more information on our Business Quick Deposit service, A quick and easy ways to pay in cash and cheques ?*</td>
+                                        <td id="quickDeposit-tr"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Would you like a Business Debit Card to help you manage your daily work expenses and withdraw cash?*</td>
+                                        <td id="debitCard-tr"></td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+
+                                    <h4>Business Credit Card</h4></td>
+                                    <strong>If you wish to apply for a Business Credit Card(s) please read (1) and (2) below. </strong>
+
+
+                                        <p>1. To apply for a Business Credit Card your registered business address
+                                            must be in the United Kingdom, Channel Islands, lsle of Man or Gibraltar
+                                            or you should be registered for tax purpose in one of those jurisdictions.</p>
+
+                                    <p>2. By completing below you are asking the Bank to issue Cards to all the
+                                        Cardholders named there. If we approve the application for a Business Credit
+                                        Card for Party (1), this does not mean that we have also approved the request for Cards to be issued to Party (2), (3) and (4) (if any). Separate checks may be carried out in respect of Party (2), (3) and (4) after your Business Credit Card Agreement for Party (1) has been made</p>
+                                   <strong>As part of your free Business Banking package, you may apply for a Business Credit Card free from annual fees in your first year (subject to status). </strong>
+                                <table class="table table-bordered table-hover bankRequ-table">
+                                    <thead class="bg-grey">
+                                    <tr>
+                                        <th width="50%">Form fields</th>
+                                        <th width="50%">Customer answers</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Would you like a Business Credit Card for the account ?*</td>
+                                        <td id="bizCC-tr"></td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /Banking Requirements Tab -->
+
+                            <!-- KYC - Complanies House Tab -->
+                            <div role="tabpanel" class="tab-pane" id="kyc">
+                                <table class="table table-bordered table-hover">
+                                    <thead class="bg-grey">
+                                    <tr>
+                                        <th>KYC result</th>
+                                        <th>Action</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Complany Match. Running state finished. Updated at 10.06.2016 18:53:44</td>
+                                        <td><a>Re-Validate</a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /KYC - Complanies House Tab -->
+
+                            <!-- Communication History Tab -->
+                            <div role="tabpanel" class="tab-pane" id="commHistory">
+                                <table class="table table-bordered table-hover">
+                                    <thead class="bg-grey">
+                                    <tr>
+                                        <th>Message id</th>
+                                        <th>To customer</th>
+                                        <th>To email</th>
+                                        <th>From user</th>
+                                        <th>Channel</th>
+                                        <th>Account open</th>
+                                        <th>Category</th>
+                                        <th>Status</th>
+                                        <th>Date</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><a>1983779wf79w87</a></td>
+                                        <td>John Smith</td>
+                                        <td>john@above.com</td>
+                                        <td><a>system</a></td>
+                                        <td>Email</td>
+                                        <td>Account open</td>
+                                        <td>Organisation</td>
+                                        <td>Unknown(Sent)</td>
+                                        <td>10.06.2016 19:30:00</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /Communication History Tab -->
+
+                            <!-- Documents Tab -->
+                            <div role="tabpanel" class="tab-pane" id="docs">
+                                <div class="form-group">
+                                    <label for="idProofFile">Upload Customer ID Proof</label>
+                                    <input type="file" id="idProofFile">
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="addressProofFile">Upload Customer Proof of Address</label>
+                                    <input type="file" id="addressProofFile">
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="photoProofFile">Upload Identification photo</label>
+                                    <input type="file" id="photoProofFile">
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="additionalFile1">Upload Additional Document</label>
+                                    <input type="file" id="additionalFile1">
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="additionalFile2">Upload Additional Document</label>
+                                    <input type="file" id="additionalFile2">
+                                </div>
+                            </div>
+                            <!-- /Documents Tab -->
+
+                        </div>
+                    </div>
+                    </div>
+
+            </div>
+                <div class="company-member-details">
+                        <div class="col-md-12">
+                            <div class="card card-details">
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#princ-details" aria-controls="princ-details" role="tab"
+                                           data-toggle="tab">
+                                            Principal Details
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#kyc-member" aria-controls="kyc-member" role="tab" data-toggle="tab">
+                                            KYC (<span class="kycMemCount">2</span>)
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#docs-member" aria-controls="docs-member" role="tab" data-toggle="tab">
+                                            Documents (<span class="docsMemCount">1</span>)
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- Tab panes -->
+                                <div class="tab-content">
+                                    <!-- Principal Details Tab -->
+                                    <div role="tabpanel" class="tab-pane active" id="princ-details">
+                                        <table class="table table-bordered table-hover">
+                                            <thead class="bg-grey">
+                                            <tr>
+                                                <th>Form fields</th>
+                                                <th>Customer answers</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td><h4>Personal Details</h4></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Title*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>First Name*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Middle Name(s)</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Surname*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Date of Birth*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Please select all your roles within the business/organisation*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>If 'Other' please specify</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Gender*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Is your home address the same as your organisation's?*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>If 'Other' please provide details </strong></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>(If Other) Building name/number</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>(If Other) Street</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>(If Other) Town /City</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>(If Other) County/State</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>(If Other) Country</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>(If Other) Post Code</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Date of entry to this address?*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>If less than 3 years please provide the following details. </strong></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>(If less) Building name/number</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>(If less) Street</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>(If less) Town /City</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>(If less) County/State</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>(If less) Country</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>(If less) Post Code</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>(If less) Home telephone number*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>(If less) Preferred daytime contact number*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>(If less) Mobile number*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>(If less) Email Address*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Country of Nationality ?*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Are you a national and or Citizen of any other country ?*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>If 'Yes' please provide Country of Nationality/Citizenship</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Country of residence*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Country of birth*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Place of birth (Town)*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>In which country are you resident for tax purposes?*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Please provide Tax identification no</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Are you resident for tax purposes in any other country?* </td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>If 'Yes' please provide Country</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>If 'Yes' please provide Tax identification no</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>When did you become the owner of your business?*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>How long have you been in this line of business?*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><h4>Details of Principals' experience in this activity/industry</h4></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Number of years experience*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Description of Experience*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Financial Ownership (%)*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Voting Ownership(%)*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Individual's Occupation*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Which best describes your living circumstances?*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Do you hold any personal credit, charge or store cards?*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>If 'Yes' which of the following Cards does the customer have</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>If 'Other' please specify</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Do you have a Bank Account?*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Have you ever been insolvent, bankrupt, sequestrated, involved in any court proceedings for debt or made arrangements with your creditors?*</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>If 'Yes' please provide details (Bankruptcy, Court proceedings) A discharge certificate may be required if the bankruptcy has been discharged.</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Memorable Word* </td>
+                                                <td></td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- /Principal Details Tab -->
+
+
+
+                                    <!-- KYC - Member Tab -->
+                                    <div role="tabpanel" class="tab-pane" id="kyc-member">
+                                        <table class="table table-bordered table-hover">
+                                            <thead class="bg-grey">
+                                            <tr>
+                                                <th>KYC result</th>
+                                                <th>Action</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Complany Match. Running state finished. Updated at 10.06.2016 18:53:44</td>
+                                                <td><a>Re-Validate</a></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- /KYC - Complanies House Tab -->
+
+
+
+                                    <!-- Documents Tab -->
+                                    <div role="tabpanel" class="tab-pane" id="docs-member">
+                                        <div class="form-group">
+                                            <label for="idProofFile-member">Upload Customer ID Proof</label>
+                                            <input type="file" id="idProofFile-member">
+                                        </div>
+                                        <br>
+                                        <div class="form-group">
+                                            <label for="addressProofFile-member">Upload Customer Proof of Address</label>
+                                            <input type="file" id="addressProofFile-member">
+                                        </div>
+                                        <br>
+                                        <div class="form-group">
+                                            <label for="photoProofFile-member">Upload Identification photo</label>
+                                            <input type="file" id="photoProofFile-member">
+                                        </div>
+                                        <br>
+                                        <div class="form-group">
+                                            <label for="additionalFile1-member">Upload Additional Document</label>
+                                            <input type="file" id="additionalFile1-member">
+                                        </div>
+                                        <br>
+                                        <div class="form-group">
+                                            <label for="additionalFile2-member">Upload Additional Document</label>
+                                            <input type="file" id="additionalFile2-member">
+                                        </div>
+                                    </div>
+                                    <!-- /Documents Tab -->
+
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- /Main Section -->
+        <!-- Info Section -->
+        <section class="info-section">
+            <div class="copy-right text-right">CustomerIQ - 2016 Copyright</div>
+        </section>
+        <!-- /Info Section -->
+    </div>
+    <!-- /.container-fluid -->
+    <!-- /#page-wrapper -->
+</div>
+<!-- /#wrapper -->
+<div id="edit-task-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content task-modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Task Edit</h4>
+            </div>
+            <div class="modal-body task-modal-body">
+                <form class="task-form col-sm-12" id="edit-task-form">
+                    <div class="task-content">
+                        <input type="text" class="form-control no-botom-border col-sm-12" id="task-title-input-edit"
+                               placeholder="Task name">
+                        <textarea class="form-control col-sm-12" placeholder="Task description"
+                                  id="task-desc-input-edit"></textarea>
+                    </div>
+                    <div class="task-meta">
+                        <div class="col-sm-5 datepicker">
+                            <div class='input-group date' id='datetimepicker-edit-task'>
+                                <div class="input-group-addon"><i class="fa fa-clock-o"></i></div>
+                                <input type='text' class="form-control" />
+                                    <span class="input-group-addon">
+                                                    <span class="fa fa-calendar"></span>
+                                    </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 assigned-to">
+                            <div class="input-group pull-right">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <select class="form-control" id="task-ass-user-select-edit">
+                                    <option value="No person assigned">Assign to</option>
+                                    <option value="Person 1">Person 1</option>
+                                    <option value="Person 2">Person 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <a type="submit" class=" btn control-btn control-btn-save"
+                               onclick="saveTask.call(this)">Save</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<div id="edit-note-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content note-modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Note Edit</h4>
+            </div>
+            <div class="modal-body note-modal-body">
+                <form id="edit-note-form" class="note-form">
+                    <div class="note-content col-sm-10">
+                        <input type="text" class="form-control" name="noteText" id="note-text-input-edit"
+                               placeholder="Add notes">
+                    </div>
+                    <div class="note-input-control col-sm-2">
+                        <a class=" btn control-btn control-btn-save" onclick="saveNote.call(this)">Save
+                        </a>
+                    </div>
+                    <div class="note-extra col-sm-12">
+                        <div class="note-files">
+                            <a href="">Attach file</a>
+                        </div>
+                        <div class="note-private pull-right">
+                            <input type="checkbox" value=""> Private note
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+
+<div id="upload-ids-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content upload-ids-modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Upload IDs</h4>
+            </div>
+            <div class="modal-body note-modal-body">
+                <div class="form-group">
+                    <label for="idProofFile-edit">Upload Customer ID Proof</label>
+                    <input type="file" id="idProofFile-edit">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="addressProofFile-member">Upload Customer Proof of Address</label>
+                    <input type="file" id="addressProofFile-edit">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="photoProofFile-member">Upload Identification photo</label>
+                    <input type="file" id="photoProofFile-edit">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="additionalFile1-member">Upload Additional Document</label>
+                    <input type="file" id="additionalFile1-edit">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="additionalFile2-member">Upload Additional Document</label>
+                    <input type="file" id="additionalFile2-edit">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class=" btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class=" btn control-btn control-btn-save">Save</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+
+
+<!--Activity Message Template-->
+<div class="hide" id="activity-msg-template">
+    <div class="message-item" id="">
+        <div class="message-inner">
+            <div class="message-head clearfix">
+                <div class="qa-message-content">
+                    <span>system</span> sent
+                    <span>email "Account pending"</span> to
+                    <span>Above Tech Ltd</span>
+                </div>
+            </div>
+            <div class="user-detail">
+                <div class="post-time">
+                    <p><i class="fa fa-clock-o"></i> 10.06.2016 18:30:00
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /Activity Message Template-->
+
+<!--Task Template-->
+<li class="list-group-item task-item hide" id="task-template">
+    <div class="row" id="task-" data-toggle="task-dd-">
+        <div class="task-title">
+            <input type="checkbox" value=""> <strong></strong>
+        </div>
+        <div class="task-detail">
+            <div class="post-time">
+                <p><i class="fa fa-clock-o"></i> 10.06.2016 18:30:00
+                </p>
+            </div>
+            <div class="assigned-user">
+                <p><i class="fa fa-user"></i><a href=""></a></p>
+            </div>
+            <i class="fa fa-chevron-down pull-right toggle"></i>
+        </div>
+    </div>
+    <div id="task-dd-" class="task-item-content">
+        <div class="task-desc col-sm-12"></div>
+        <div class="task-content-control text-right">
+            <a type="button" class=" btn control-btn control-btn-del" onclick="delTask.call(this)">Delete
+            </a>
+            <button class=" btn control-btn control-btn-def" data-toggle="modal" data-target="#edit-task-modal"
+            onclick="editTask()">Edit
+            </button>
+        </div>
+    </div>
+</li><!--/Task Template-->
+
+<!--Note Template-->
+<li class="list-group-item note-item hide" id="note-template">
+    <div class="row" id="note-" data-toggle="note-dd-">
+        <div class="col-sm-2">
+            <div class="note-user">system</div>
+        </div>
+
+        <div class="col-sm-10 note-detail">
+            <div class="note-text">
+                <p></p>
+            </div>
+            <div class="post-time">
+                <p><i class="fa fa-clock-o"></i>10.06.2016 18:30:00
+                </p>
+            </div>
+            <i class="fa fa-chevron-down pull-right toggle" ></i>
+        </div>
+    </div>
+    <div id="note-dd-" class="note-item-control">
+        <div class="col-sm-12 note-files-private" >
+            <div class="note-files">
+                No files attached
+            </div>
+            <div class="note-private pull-right">
+                <input type="checkbox" value=""> Private note
+            </div>
+        </div>
+        <div class="note-content-control text-right">
+            <a type="button" class=" btn control-btn control-btn-del" onclick="delNote.call(this)">Delete
+            </a>
+            <button class=" btn control-btn control-btn-def" data-toggle="modal" data-target="#edit-note-modal"
+            onclick="editNote()">Edit
+            </button>
+        </div>
+    </div>
+</li><!--/Note Template-->
+
+
+<!-- JS -->
+<script src="js/libs/jquery.min.js"></script>
+<script src="js/libs/bootstrap.min.js"></script>
+<script src="js/libs/jquery.storageapi.min.js"></script>
+<script src="js/libs/nprogress.js"></script>
+<script src="js/libs/moments.min.js"></script>
+<script src="js/libs/en-gb.js"></script>
+<script src="js/libs/bootstrap-datetimepicker.js"></script>
+<script src="js/dashboard-functions.js"></script>
+<script src="js/customer-functions.js"></script>
+
+</body>
+
+</html>

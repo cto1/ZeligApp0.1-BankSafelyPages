@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Organisation | CustomerIQ</title>
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<span class='nprogress-logo fade out'></span>
+<div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse side-nav" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">CustomerIQ</a>
+        </div>
+        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav menu-items">
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#dash-dd"><i class="fa fa-fw fa-dashboard"></i> Dashboard <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="dash-dd" class="collapse">
+                        <li>
+                            <a href="#">Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#">My Tasks</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#custom-dd"><i class="fa fa-fw fa-university"></i> Customers <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="custom-dd" class="collapse">
+                        <li>
+                            <a href="customers.html">Live</a>
+                        </li>
+                        <li>
+                            <a href="#">Monitoring</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#kyc-dd"><i class="fa fa-fw fa-check"></i> KYC <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="kyc-dd" class="collapse">
+                        <li>
+                            <a href="#">Companies House</a>
+                        </li>
+                        <li>
+                            <a href="#">Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#com-dd"><i class="fa fa-fw fa-envelope"></i> Communication <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="com-dd" class="collapse">
+                        <li>
+                            <a href="#">Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#wflow-dd"><i class="fa fa-fw fa-sitemap"></i> Workflow <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="wflow-dd" class="collapse">
+                        <li>
+                            <a href="#">Rules</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#rep-dd"><i class="fa fa-fw fa-check"></i> Reports <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="rep-dd" class="collapse">
+                        <li>
+                            <a href="#">Report 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Report 2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#log-dd"><i class="fa fa-fw fa-file-text-o"></i> Logs <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="log-dd" class="collapse">
+                        <li>
+                            <a href="#">Audit logs</a>
+                        </li>
+                    </ul>
+                </li>
+                  <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#usermngmnt-dd"><i class="fa fa-fw fa-group"></i> User Management <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="usermngmnt-dd" class="collapse">
+                        <li>
+                            <a href="#">Organisation</a>
+                        </li>
+                        <li>
+                            <a href="#">Team</a>
+                        </li>
+                        <li>
+                            <a href="#">Groups</a>
+                        </li>
+                        <li>
+                            <a href="#">Roles</a>
+                        </li>
+                        <li>
+                            <a href="#">Permissions</a>
+                        </li>
+                        <li>
+                            <a href="#">Password policy</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#admin-dd"><i class="fa fa-fw fa-cog"></i> Admin <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="admin-dd" class="collapse">
+                        <li class="active">
+                            <a href="organisation.html">Organisation</a>
+                        </li>
+                        <li>
+                            <a href="sites.html">Sites</a>
+                        </li>
+                        <li>
+                            <a href="departments.html">Departments</a>
+                        </li>
+                        <li>
+                            <a href="app-settings.html">App Settings</a>
+                        </li>
+                        <li>
+                            <a onclick="initBizHoursData()">Init Data*</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+    <!-- Top Menu Items -->
+    <ul class="nav top-nav">
+        <li>
+            <form class="navbar-form ">
+                <input type="text" class="form-control" placeholder="Search...">
+            </form>
+        </li>
+        <li class="dropdown user-profile">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+        <!-- Message Section -->
+        <section class="message-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <a href="" class="show-help">Show help</a>
+                </div>
+            </div>
+        </section>
+        <!-- /Message Section -->
+        <!-- Main Section -->
+        <section class="main-section">
+
+            <div class="page-header">
+
+
+                    <div class="col-md-8">
+                        <h4 class="page-name">Organisation</h4>
+
+                        <ol class="breadcrumb">
+                            <li><a href="#">CustomerIQ</a></li>
+                            <li><a href="#">Admin</a></li>
+                            <li class="active">Organisation</li>
+                        </ol>
+
+                    </div>
+                    <div class="col-md-4">
+                        <div class="page-actions">
+
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+
+            </div>
+            <div id="organisation-page" class="page-content">
+
+                <div class="col-md-8">
+                <section class="timezone inner-section">
+                    <strong>Select the default timezone of your organisation</strong>
+                    <p>The timezone selected will be displayed wherever time and date is displayed in the appllication.</p>
+                    <form class="form-horizontal organisation-form">
+                        <div class="form-group">
+                            <label for="timezone-select" class="col-sm-2 control-label">Time Zone</label>
+                            <div class="col-sm-6">
+                                <select id="timezone-select" class="form-control"></select>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                <section class="language inner-section">
+                    <strong>Select the default language of your organisation</strong>
+                    <p>This setting will change the default display language for all pages of the Application and Self Service Portal as well as email notification. You can also define a different language per site as well as per user (via user card). The setting per user takes precedence over the site setting, which itself takes precedence over the organisation-wide setting.</p>
+                    <form class="form-horizontal organisation-form">
+                        <div class="form-group">
+                            <label for="lang-select" class="col-sm-2 control-label">Language</label>
+                            <div class="col-sm-6">
+                                <select id="lang-select" class="form-control">
+                                    <option value="English">English</option>
+                                    <option value="German">German</option>
+                                    <option value="Italian">Italian</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+                <section class="biz-hours inner-section">
+                    <strong>Business hours</strong>
+                    <p>This setting is used to enable business hours to adapt your business rules, Service Level Agreement, and reports to your working hours.</p>
+                    <table class="table" id="biz-hours-table">
+                        <tbody>
+                        <tr class="day1-tr">
+                            <td>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" class="disable-day">
+                                        Monday </label>
+                                </div>
+                            </td>
+                            <td>
+                                <select class="hours-select-am"></select>
+                                <select class="from-am-pm">
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                                </select>
+                            </td>
+                            <td class="text-center">to</td>
+                            <td>
+                                <select class="hours-select-pm"></select>
+                                <select class="to-am-pm">
+                                    <option value="PM">PM</option>
+                                    <option value="AM">AM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="checkbox ">
+                                    <label>
+                                        <input type="checkbox" class="all-day"> All Day </label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="day2-tr">
+                            <td>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" class="disable-day"> Tuesday </label>
+                                </div>
+                            </td>
+                            <td>
+                                <select class="hours-select-am"></select>
+                                <select class="from-am-pm">
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                                </select>
+                            </td>
+                            <td class="text-center">to</td>
+                            <td>
+                                <select class="hours-select-pm"></select>
+                                <select class="to-am-pm">
+                                    <option value="PM">PM</option>
+                                    <option value="AM">AM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="checkbox ">
+                                    <label>
+                                        <input type="checkbox" class="all-day"> All Day </label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="day3-tr">
+                            <td>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" class="disable-day"> Wednesday </label>
+                                </div>
+                            </td>
+                            <td>
+                                <select class="hours-select-am"></select>
+                                <select class="from-am-pm">
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                                </select>
+                            </td>
+                            <td class="text-center">to</td>
+                            <td>
+                                <select class="hours-select-pm"></select>
+                                <select class="to-am-pm">
+                                    <option value="PM">PM</option>
+                                    <option value="AM">AM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="checkbox ">
+                                    <label>
+                                        <input type="checkbox" class="all-day"> All Day </label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="day4-tr">
+                            <td>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" class="disable-day"> Thursday </label>
+                                </div>
+                            </td>
+                            <td>
+                                <select class="hours-select-am"></select>
+                                <select class="from-am-pm">
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                                </select>
+                            </td>
+                            <td class="text-center">to</td>
+                            <td>
+                                <select class="hours-select-pm"></select>
+                                <select class="to-am-pm">
+                                    <option value="PM">PM</option>
+                                    <option value="AM">AM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="checkbox ">
+                                    <label>
+                                        <input type="checkbox" class="all-day"> All Day </label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="day5-tr">
+                            <td>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" class="disable-day"> Friday </label>
+                                </div>
+                            </td>
+                            <td>
+                                <select class="hours-select-am"></select>
+                                <select class="from-am-pm">
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                                </select>
+                            </td>
+                            <td class="text-center">to</td>
+                            <td>
+                                <select class="hours-select-pm"></select>
+                                <select class="to-am-pm">
+                                    <option value="PM">PM</option>
+                                    <option value="AM">AM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="checkbox ">
+                                    <label>
+                                        <input type="checkbox" class="all-day"> All Day </label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="day6-tr">
+                            <td>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" class="disable-day"> Saturday </label>
+                                </div>
+                            </td>
+                            <td>
+                                <select class="hours-select-am"></select>
+                                <select class="from-am-pm">
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM</option>
+                                </select>
+                            </td>
+                            <td class="text-center">to</td>
+                            <td>
+                                <select class="hours-select-pm"></select>
+                                <select class="to-am-pm">
+                                    <option value="PM">PM</option>
+                                    <option value="AM">AM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="checkbox ">
+                                    <label>
+                                        <input type="checkbox" class="all-day"> All Day </label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="day7-tr">
+                            <td>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" class="disable-day"> Sunday </label>
+                                </div>
+                            </td>
+                            <td>
+                                <select class="hours-select-am"></select>
+                                <select class="from-am-pm">
+                                    <option value="AM">AM</option>
+                                    <option value="PM">PM
+                                    </option>
+                                </select>
+                            </td>
+                            <td class="text-center">to</td>
+                            <td>
+                                <select class="hours-select-pm"></select>
+                                <select class="to-am-pm">
+                                    <option value="PM">PM</option>
+                                    <option value="AM">AM</option>
+                                </select>
+                            </td>
+                            <td>
+                                <div class="checkbox ">
+                                    <label>
+                                        <input type="checkbox" class="all-day"> All Day </label>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="text-right">
+                        <a class=" btn control-btn control-btn-save"
+                           onclick="saveOrg()">Save
+                        </a>
+                    </div>
+                </section>
+
+            </div>
+            </div>
+            <div class="clearfix"></div>
+        </section>
+
+        <!-- /Main Section -->
+        <!-- Info Section -->
+        <section class="info-section">
+            <div class="copy-right text-right">CustomerIQ - 2016 Copyright</div>
+        </section>
+        <!-- /Info Section -->
+    </div>
+    <!-- /.container-fluid -->
+    <!-- /#page-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+
+
+<!-- JS -->
+<script src="js/libs/jquery.min.js"></script>
+<script src="js/libs/bootstrap.min.js"></script>
+<script src="js/libs/jquery.storageapi.min.js"></script>
+<script src="js/libs/nprogress.js"></script>
+<script src="js/libs/timezones.full.min.js"></script>
+<script src="js/dashboard-functions.js"></script>
+<script src="js/admin-functions.js"></script>
+
+</body>
+
+</html>

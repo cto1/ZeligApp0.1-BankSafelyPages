@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sign in | CustomerIQ</title>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+   <div class="container">
+
+      <form class="form-signin" id="twoFactorForm" action="" method="POST">
+        <h2 class="form-signin-heading">CustomerIQ</h2>
+        <h3 class="form-signin-heading">Backoffice</h3>
+        <p class="form-signin-heading">Enter the verification code</p>
+        <input type="text" id="inputCode" name="inputCode" class="form-control" placeholder="Verification code" required autofocus>
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+      </form>
+
+    </div> <!-- /container -->
+
+    <!-- JS -->
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/jquery.validate.min.js"></script>
+    <script>
+        $.validator.setDefaults({
+            submitHandler: function() {
+                alert("submitted!");
+            }
+        });
+        $('#twoFactorForm').validate();
+    </script>
+
+</body>
+
+</html>
