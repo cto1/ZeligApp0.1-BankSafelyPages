@@ -848,3 +848,128 @@ table .form-control{
 div.dataTables_wrapper div.dataTables_filter {
     text-align: left;
 }
+
+.dashboard-wrapper {
+  padding: 30px;
+  padding-left: 15px;
+  padding-right: 30px;
+  background-color: #eee;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.dashboard-wrapper .col-md-4,
+.dashboard-wrapper .col-md-6 {
+  padding-right: 0px;
+}
+
+.dashboard-wrapper .white-box {
+  border-radius: 4px;
+  margin: 0 14px 28px;
+  overflow: hidden;
+  background-color: #fff;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border: 1px solid #dbdbdb;
+  clear: right;
+  padding: 7px;
+}
+
+.white-box div:nth-child(1) {
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 7px;
+  padding-top:3px;
+  padding-left: 5px;
+  font-size: 16px;
+}
+
+.white-box .value {
+  text-align: center;
+  font-size: 60px;
+}
+
+.dashboard-wrapper #piechart {
+  height: 330px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+#piechart div:nth-child(1) {
+  margin-top: -5px;
+}
+
+.tabler {
+  width: 100%;
+}
+
+.tabler div:nth-child(1) {
+  border-bottom-width: 0px;
+}
+
+.tabler tr th:nth-child(2),
+.tabler tr td:nth-child(2) {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.tabler tr:nth-child(even) {
+  background-color: #eee
+}
+
+.tabler div {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px !important;
+}
+
+.tabler th {
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+}
+
+#chart_div {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+  margin-left: 0%;
+  overflow: hidden;
+}
+
+#chart_div div:nth-child(1) {
+  margin-top: -10px;
+}
+
+.holder {
+  float: right;
+  right: 0px;
+  position: absolute;
+  padding-right: 20px;
+}
+
+.titler {
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: initial;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  
+}
+
+.titler #ranger {
+  display: inline;
+  float: right;
+  top: 0px;
+  right: 0px;
+  width: 220px;
+  text-align: center;
+  text-align: center;
+  font-size: 15px;
+}

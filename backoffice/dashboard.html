@@ -14,6 +14,7 @@
     <link href="css/mobile.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
 </head>
 
 <body>
@@ -38,7 +39,7 @@
                     <a href="javascript:;" data-toggle="collapse" data-target="#dash-dd"><i
                             class="fa fa-fw fa-dashboard"></i> Dashboard <i class="fa fa-fw fa-caret-down"></i></a>
                     <ul id="dash-dd" class="collapse">
-                        <li>
+                        <li class="active">
                             <a href="dashboard.html">Dashboard</a>
                         </li>
                         <li>
@@ -193,21 +194,118 @@
 
         <!-- Message Section -->
         <section class="message-section ">
-
         </section><!-- /Message Section -->
 
         <!-- Main Section -->
-        <section class="main-section">
-            <div class="error-page" style="background-color: #fff;margin-top: 100px;padding: 0 10px;">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <p>Something went wrong.</p>
-                        <p>We're sorry...</p>
-                        <a href="index.html">Go back to dashboard</a>
-                    </div>
-                </div>
+        <div class="titler">
+          <div>My Dashboard</div><div class="holder"><input id="ranger"></input></div>
+        </div>
+       <div class="dashboard-wrapper">
+         <div class="row">
+           <div class="col-md-4">
+             <div class="white-box">
+              <div>All Customers</div>
+              <div class="value">1140</div>
             </div>
-        </section><!-- /Main Section -->
+           </div>
+           <div class="col-md-4">
+             <div class="white-box">
+              <div>Verified Customers</div>
+              <div class="value">1030</div>
+            </div>
+           </div>
+           <div class="col-md-4">
+             <div class="white-box">
+              <div>Not Verified Customers</div>
+              <div class="value">110</div>
+            </div>
+           </div>
+         </div>
+         <div class="row">
+          <div class="col-md-6">
+            <div class="white-box">
+              <div>My Customers</div>
+              <div id="piechart"></div>
+           </div>
+           <div class="white-box">
+              <div>Verified Customers</div>
+              <div id="chart_div"></div>
+          </div>
+         </div>
+          <div class="col-md-6">
+            <div class="white-box">
+              <div>New Customers</div>
+                <table class="tabler">
+                  <tbody>
+                    <tr>
+                      <th>Business Name</th>
+                      <th>Business Type</th>
+                    </tr>
+                    <tr>
+                      <td><div>Above Technology Ltd</div></td>
+                      <td>Private Company Limited by shares</td>
+                    </tr>
+                    <tr>
+                      <td><div>Law Partners</div></td>
+                      <td>Private Company Limited by Guarantee</td>
+                    </tr>
+                    <tr>
+                      <td><div>Top Retail</div></td>
+                      <td>Private Company Limited by shares</td>
+                    </tr>
+                    <tr>
+                      <td><div>FX Money Ltd</div></td>
+                      <td>Private Company Limited by shares</td>
+                    </tr>
+                    <tr>
+                      <td><div>Pay Mobile</div></td>
+                      <td>Private Company Limited by Guarantee</td>
+                    </tr>
+                    <tr>
+                      <td><div>FX Money Ltd</div></td>
+                      <td>Private Company Limited by shares</td>
+                    </tr>
+                  </tbody>
+                </table>
+           </div>
+           <div class="white-box">
+              <div>New Documents</div>
+              <table class="tabler">
+                <tbody>
+                  <tr>
+                    <th>Business Name</th>
+                    <th>Document Type</th>
+                  </tr>
+                  <tr>
+                    <td><div>Above Technology Ltd</div></td>
+                    <td><a href="">Certificate of Incorporation</a></td>
+                  </tr>
+                  <tr>
+                    <td><div>Law Partners</div></td>
+                    <td><a href="">Certificate of Incorporation</a></td>
+                  </tr>
+                  <tr>
+                    <td><div>Top Retail</div></td>
+                    <td><a href="">Certificate of Incorporation</a></td>
+                  </tr>
+                  <tr>
+                    <td><div>FX Money Ltd</div></td>
+                    <td><a href="">Certificate of Incorporation</a></td>
+                  </tr>
+                  <tr>
+                    <td><div>Pay Mobile</div></td>
+                    <td><a href="">Certificate of Incorporation</a></td>
+                  </tr>
+                  <tr>
+                    <td><div>FX Money Ltd</div></td>
+                    <td><a href="">Certificate of Incorporation</a></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+         </div>
+       </div>
+       <!-- /Main Section -->
 
     </div>
     <!-- /.container-fluid -->
@@ -216,13 +314,17 @@
 </div>
 <!-- /#wrapper -->
 
-
 <!-- JS -->
 <script src="js/libs/jquery.min.js"></script>
+<script src="js/libs/debounce.js"></script>
 <script src="js/libs/bootstrap.min.js"></script>
 <script src="js/libs/nprogress.js"></script>
+
+<script type="text/javascript" src="js/libs/moment.min.js"></script>
+<script type="text/javascript" src="js/libs/daterangepicker.js"></script>
+
+<script src="js/libs/loader.js"></script>
 <script src="js/dashboard-functions.js"></script>
 
 </body>
-
 </html>
