@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Tasks | CustomerIQ</title>
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/daterangepicker.css" />
+</head>
+
+<body>
+<span class='nprogress-logo fade out'></span>
+<div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse side-nav" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">CustomerIQ</a>
+        </div>
+        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav menu-items">
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#dash-dd"><i
+                            class="fa fa-fw fa-dashboard"></i> Dashboard <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="dash-dd" class="collapse">
+                        <li>
+                            <a href="dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="active">
+                            <a href="tasks.html">My Tasks</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#custom-dd"><i
+                            class="fa fa-fw fa-university"></i> Customers <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="custom-dd" class="collapse">
+                        <li>
+                            <a href="customers.html">Live</a>
+                        </li>
+                        <li>
+                            <a href="#">Monitoring</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#kyc-dd"><i
+                            class="fa fa-fw fa-check"></i> KYC <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="kyc-dd" class="collapse">
+                        <li>
+                            <a href="#">Companies House</a>
+                        </li>
+                        <li>
+                            <a href="#">Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#com-dd"><i
+                            class="fa fa-fw fa-envelope"></i> Communication <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="com-dd" class="collapse">
+                        <li>
+                            <a href="#">Messages</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#wflow-dd"><i
+                            class="fa fa-fw fa-sitemap"></i> Workflow <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="wflow-dd" class="collapse">
+                        <li>
+                            <a href="#">Rules</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#rep-dd"><i
+                            class="fa fa-fw fa-check"></i> Reports <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="rep-dd" class="collapse">
+                        <li>
+                            <a href="#">Report 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Report 2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#log-dd"><i
+                            class="fa fa-fw fa-file-text-o"></i> Logs <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="log-dd" class="collapse">
+                        <li>
+                            <a href="#">Audit logs</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#usermngmnt-dd"><i class="fa fa-fw fa-group"></i> User Management <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="usermngmnt-dd" class="collapse">
+                        <li>
+                            <a href="organisation.html">Organisation</a>
+                        </li>
+                        <li>
+                            <a href="#">Team</a>
+                        </li>
+                        <li>
+                            <a href="#">Groups</a>
+                        </li>
+                        <li>
+                            <a href="#">Roles</a>
+                        </li>
+                        <li>
+                            <a href="#">Permissions</a>
+                        </li>
+                        <li>
+                            <a href="#">Password policy</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#admin-dd"><i
+                            class="fa fa-fw fa-cog"></i> Admin <i class="fa fa-fw fa-caret-down"></i></a>
+                    <ul id="admin-dd" class="collapse">
+                            <li>
+                            <a href="organisation.html">Organisation</a>
+                        </li>
+                        <li>
+                            <a href="sites.html">Sites</a>
+                        </li>
+                        <li>
+                            <a href="departments.html">Departments</a>
+                        </li>
+                        <li>
+                            <a href="app-settings.html">App Settings</a>
+                        </li>
+                        <li>
+                            <a onclick="initBizHoursData()">Init Data*</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+    <!-- Top Menu Items -->
+    <ul class="nav top-nav">
+        <li>
+            <form class="navbar-form ">
+                <input type="text" class="form-control" placeholder="Search...">
+            </form>
+        </li>
+        <li class="dropdown user-profile">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John <b
+                    class="caret"></b></a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+   <!-- Page Wrapper -->
+    <div id="page-wrapper">
+        <!-- Message Section -->
+        <section class="message-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <a href="" class="show-help">Show help</a>
+                </div>
+            </div>
+        </section>
+        <!-- /Message Section -->
+        <!-- Main Section -->
+        <section class="main-section">
+
+            <div class="page-header">
+
+
+                <div class="col-md-8">
+                    <h4 class="page-name">My Tasks</h4>
+
+                    <ol class="breadcrumb">
+                        <li><a href="#">CustomerIQ</a></li>
+                        <li><a href="tasks.html">My Tasks</a></li>
+                    </ol>
+
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+       <div class="dashboard-wrapper">
+         <div class="row">
+          <div class="col-md-6">
+            <div class="white-box">
+              <div><h3>My Tasks</h3></div>
+                <ul class="list-group">
+                    <li class="list-group-item task-item">
+                        <div class="row" id="task-0" data-toggle="task-dd-0">
+                            <div class="task-title">
+                                <input type="checkbox" value=""> <strong>Request meeting in branch</strong>
+                            </div>
+                                    <div class="task-detail">
+                                        <div class="post-time">
+                                            <p><i class="fa fa-clock-o"></i> 20.06.2016 18:30:00
+                                            </p>
+                                        </div>
+                                                <div class="assigned-user">
+                                                    <p><i class="fa fa-user"></i><a href="">Aleks Kudic</a></p>
+                                                </div>
+                                                        <i class="fa fa-chevron-down pull-right toggle"></i>
+                                    </div>
+                        </div>
+                            <div id="task-dd-0" class="task-item-content">
+                            Client needs to come for an interview. 
+                                <div class="task-content-control text-right">
+                                    <button type="button" class=" btn control-btn control-btn-del">Delete
+                                    </button>
+                                        <button class=" btn control-btn control-btn-def" data-toggle="modal" data-target="#edit-task-modal">Edit
+                                        </button>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+                    <ul class="list-group">
+                    <li class="list-group-item task-item">
+                        <div class="row" id="task-1" data-toggle="task-dd-1">
+                            <div class="task-title">
+                                <input type="checkbox" value=""> <strong>Missing CoF and Passport</strong>
+                            </div>
+                                    <div class="task-detail">
+                                        <div class="post-time">
+                                            <p><i class="fa fa-clock-o"></i> 11.06.2016 10:30:00
+                                            </p>
+                                        </div>
+                                                <div class="assigned-user">
+                                                    <p><i class="fa fa-user"></i><a href="">Aleks Kudic</a></p>
+                                                </div>
+                                                        <i class="fa fa-chevron-down pull-right toggle"></i>
+                                    </div>
+                        </div>
+                            <div id="task-dd-1" class="task-item-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores blanditiis deleniti dignissimos distinctio enim explicabo inventore iste necessitatibus non perspiciatis quas quia, quis ratione reprehenderit sit sunt suscipit tenetur.
+                                <div class="task-content-control text-right">
+                                    <button type="button" class=" btn control-btn control-btn-del">Delete
+                                    </button>
+                                        <button class=" btn control-btn control-btn-def" data-toggle="modal" data-target="#edit-task-modal">Edit
+                                        </button>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item task-item">
+                        <div class="row" id="task-2" data-toggle="task-dd-2">
+                            <div class="task-title">
+                                <input type="checkbox" value=""> <strong>Review Docs for <a href="">Law Partners</a></strong>
+                            </div>
+                                    <div class="task-detail">
+                                        <div class="post-time">
+                                            <p><i class="fa fa-clock-o"></i> 10.06.2016 18:30:00
+                                            </p>
+                                        </div>
+                                                <div class="assigned-user">
+                                                    <p><i class="fa fa-user"></i><a href="">Aleks Kudic</a></p>
+                                                </div>
+                                                        <i class="fa fa-chevron-down pull-right toggle"></i>
+                                    </div>
+                        </div>
+                            <div id="task-dd-2" class="task-item-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores blanditiis deleniti dignissimos distinctio enim explicabo inventore iste necessitatibus non perspiciatis quas quia, quis ratione reprehenderit sit sunt suscipit tenetur.
+                                <div class="task-content-control text-right">
+                                    <button type="button" class=" btn control-btn control-btn-del">Delete
+                                    </button>
+                                        <button class=" btn control-btn control-btn-def" data-toggle="modal" data-target="#edit-task-modal">Edit
+                                        </button>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item task-item">
+                        <div class="row" id="task-3" data-toggle="task-dd-3">
+                            <div class="task-title">
+                                <input type="checkbox" value=""> <strong>Review application <a href="customer.html">Above Technology Ltd</a></strong>
+                            </div>
+                                    <div class="task-detail">
+                                        <div class="post-time">
+                                            <p><i class="fa fa-clock-o"></i> 10.06.2016 18:30:00
+                                            </p>
+                                        </div>
+                                                <div class="assigned-user">
+                                                    <p><i class="fa fa-user"></i><a href="">Aleks Kudic</a></p>
+                                                </div>
+                                                        <i class="fa fa-chevron-down pull-right toggle"></i>
+                                    </div>
+                        </div>
+                            <div id="task-dd-3" class="task-item-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores blanditiis deleniti dignissimos distinctio enim explicabo inventore iste necessitatibus non perspiciatis quas quia, quis ratione reprehenderit sit sunt suscipit tenetur.
+                                <div class="task-content-control text-right">
+                                    <button type="button" class=" btn control-btn control-btn-del">Delete
+                                    </button>
+                                        <button class=" btn control-btn control-btn-def" data-toggle="modal" data-target="#edit-task-modal">Edit
+                                        </button>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item task-item">
+                        <div class="row" id="task-4" data-toggle="task-dd-4">
+                            <div class="task-title">
+                                <input type="checkbox" value=""> <strong>Call client <a href="">Top Retail</a></strong>
+                            </div>
+                                    <div class="task-detail">
+                                        <div class="post-time">
+                                            <p><i class="fa fa-clock-o"></i> 10.06.2016 18:30:00
+                                            </p>
+                                        </div>
+                                                <div class="assigned-user">
+                                                    <p><i class="fa fa-user"></i><a href="">Aleks Kudic</a></p>
+                                                </div>
+                                                        <i class="fa fa-chevron-down pull-right toggle"></i>
+                                    </div>
+                        </div>
+                            <div id="task-dd-4" class="task-item-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores blanditiis deleniti dignissimos distinctio enim explicabo inventore iste necessitatibus non perspiciatis quas quia, quis ratione reprehenderit sit sunt suscipit tenetur.
+                                <div class="task-content-control text-right">
+                                    <button type="button" class=" btn control-btn control-btn-del">Delete
+                                    </button>
+                                        <button class=" btn control-btn control-btn-def" data-toggle="modal" data-target="#edit-task-modal">Edit
+                                        </button>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+           </div>
+          <div class="white-box">
+              <div>New Customers</div>
+                <table class="tabler">
+                  <tbody>
+                    <tr>
+                      <th>Business Name</th>
+                      <th>Business Type</th>
+                    </tr>
+                    <tr>
+                      <td><div><a href="">Above Technology Ltd</a></div></td>
+                      <td>Private Company Limited by shares</td>
+                    </tr>
+                    <tr>
+                      <td><div><a href="">Law Partners</a></div></td>
+                      <td>Private Company Limited by Guarantee</td>
+                    </tr>
+                    <tr>
+                      <td><div><a href="">Top Retail</a></div></td>
+                      <td>Private Company Limited by shares</td>
+                    </tr>
+                    <tr>
+                      <td><div><a href="">FX Money Ltd</a></div></td>
+                      <td>Private Company Limited by shares</td>
+                    </tr>
+                    <tr>
+                      <td><div><a href="">Pay Mobile</a></div></td>
+                      <td>Private Company Limited by Guarantee</td>
+                    </tr>
+                    <tr>
+                      <td><div><a href="">FX Money Ltd</a></div></td>
+                      <td>Private Company Limited by shares</td>
+                    </tr>
+                  </tbody>
+                </table>
+           </div>
+         </div>
+          <div class="col-md-6">
+            <div class="white-box">
+              <div><h3>My Tasks</h3></div>
+                <ul class="list-group">
+                    <li class="list-group-item task-item">
+                        <div class="row" id="task-0" data-toggle="task-dd-0">
+                            <div class="task-title">
+                                <input type="checkbox" value=""> <strong>Request meeting in branch</strong>
+                            </div>
+                                    <div class="task-detail">
+                                        <div class="post-time">
+                                            <p><i class="fa fa-clock-o"></i> 20.06.2016 18:30:00
+                                            </p>
+                                        </div>
+                                                <div class="assigned-user">
+                                                    <p><i class="fa fa-user"></i><a href="">Aleks Kudic</a></p>
+                                                </div>
+                                                        <i class="fa fa-chevron-down pull-right toggle"></i>
+                                    </div>
+                        </div>
+                            <div id="task-dd-0" class="task-item-content">
+                            Client needs to come for an interview. 
+                                <div class="task-content-control text-right">
+                                    <button type="button" class=" btn control-btn control-btn-del">Delete
+                                    </button>
+                                        <button class=" btn control-btn control-btn-def" data-toggle="modal" data-target="#edit-task-modal">Edit
+                                        </button>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+                    <ul class="list-group">
+                    <li class="list-group-item task-item">
+                        <div class="row" id="task-1" data-toggle="task-dd-1">
+                            <div class="task-title">
+                                <input type="checkbox" value=""> <strong>Missing CoF and Passport</strong>
+                            </div>
+                                    <div class="task-detail">
+                                        <div class="post-time">
+                                            <p><i class="fa fa-clock-o"></i> 11.06.2016 10:30:00
+                                            </p>
+                                        </div>
+                                                <div class="assigned-user">
+                                                    <p><i class="fa fa-user"></i><a href="">Aleks Kudic</a></p>
+                                                </div>
+                                                        <i class="fa fa-chevron-down pull-right toggle"></i>
+                                    </div>
+                        </div>
+                            <div id="task-dd-1" class="task-item-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores blanditiis deleniti dignissimos distinctio enim explicabo inventore iste necessitatibus non perspiciatis quas quia, quis ratione reprehenderit sit sunt suscipit tenetur.
+                                <div class="task-content-control text-right">
+                                    <button type="button" class=" btn control-btn control-btn-del">Delete
+                                    </button>
+                                        <button class=" btn control-btn control-btn-def" data-toggle="modal" data-target="#edit-task-modal">Edit
+                                        </button>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item task-item">
+                        <div class="row" id="task-2" data-toggle="task-dd-2">
+                            <div class="task-title">
+                                <input type="checkbox" value=""> <strong>Review Docs for <a href="">Law Partners</a></strong>
+                            </div>
+                                    <div class="task-detail">
+                                        <div class="post-time">
+                                            <p><i class="fa fa-clock-o"></i> 10.06.2016 18:30:00
+                                            </p>
+                                        </div>
+                                                <div class="assigned-user">
+                                                    <p><i class="fa fa-user"></i><a href="">Aleks Kudic</a></p>
+                                                </div>
+                                                        <i class="fa fa-chevron-down pull-right toggle"></i>
+                                    </div>
+                        </div>
+                            <div id="task-dd-2" class="task-item-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores blanditiis deleniti dignissimos distinctio enim explicabo inventore iste necessitatibus non perspiciatis quas quia, quis ratione reprehenderit sit sunt suscipit tenetur.
+                                <div class="task-content-control text-right">
+                                    <button type="button" class=" btn control-btn control-btn-del">Delete
+                                    </button>
+                                        <button class=" btn control-btn control-btn-def" data-toggle="modal" data-target="#edit-task-modal">Edit
+                                        </button>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item task-item">
+                        <div class="row" id="task-3" data-toggle="task-dd-3">
+                            <div class="task-title">
+                                <input type="checkbox" value=""> <strong>Review application <a href="customer.html">Above Technology Ltd</a></strong>
+                            </div>
+                                    <div class="task-detail">
+                                        <div class="post-time">
+                                            <p><i class="fa fa-clock-o"></i> 10.06.2016 18:30:00
+                                            </p>
+                                        </div>
+                                                <div class="assigned-user">
+                                                    <p><i class="fa fa-user"></i><a href="">Aleks Kudic</a></p>
+                                                </div>
+                                                        <i class="fa fa-chevron-down pull-right toggle"></i>
+                                    </div>
+                        </div>
+                            <div id="task-dd-3" class="task-item-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores blanditiis deleniti dignissimos distinctio enim explicabo inventore iste necessitatibus non perspiciatis quas quia, quis ratione reprehenderit sit sunt suscipit tenetur.
+                                <div class="task-content-control text-right">
+                                    <button type="button" class=" btn control-btn control-btn-del">Delete
+                                    </button>
+                                        <button class=" btn control-btn control-btn-def" data-toggle="modal" data-target="#edit-task-modal">Edit
+                                        </button>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+                <ul class="list-group">
+                    <li class="list-group-item task-item">
+                        <div class="row" id="task-4" data-toggle="task-dd-4">
+                            <div class="task-title">
+                                <input type="checkbox" value=""> <strong>Call client <a href="">Top Retail</a></strong>
+                            </div>
+                                    <div class="task-detail">
+                                        <div class="post-time">
+                                            <p><i class="fa fa-clock-o"></i> 10.06.2016 18:30:00
+                                            </p>
+                                        </div>
+                                                <div class="assigned-user">
+                                                    <p><i class="fa fa-user"></i><a href="">Aleks Kudic</a></p>
+                                                </div>
+                                                        <i class="fa fa-chevron-down pull-right toggle"></i>
+                                    </div>
+                        </div>
+                            <div id="task-dd-4" class="task-item-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus asperiores blanditiis deleniti dignissimos distinctio enim explicabo inventore iste necessitatibus non perspiciatis quas quia, quis ratione reprehenderit sit sunt suscipit tenetur.
+                                <div class="task-content-control text-right">
+                                    <button type="button" class=" btn control-btn control-btn-del">Delete
+                                    </button>
+                                        <button class=" btn control-btn control-btn-def" data-toggle="modal" data-target="#edit-task-modal">Edit
+                                        </button>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+           </div>
+         </div>
+       </div>
+
+       <!-- /Main Section -->
+        <!-- Info Section -->
+        <section class="info-section">
+            <div class="copy-right text-right">CustomerIQ - 2016 Copyright</div>
+        </section>
+        <!-- /Info Section -->
+
+    </div>
+
+           <!--Task Template-->
+<li class="list-group-item task-item hide" id="task-template">
+    <div class="row" id="task-" data-toggle="task-dd-">
+        <div class="task-title">
+            <input type="checkbox" value=""> <strong></strong>
+        </div>
+        <div class="task-detail">
+            <div class="post-time">
+                <p><i class="fa fa-clock-o"></i> 10.06.2016 18:30:00
+                </p>
+            </div>
+            <div class="assigned-user">
+                <p><i class="fa fa-user"></i><a href=""></a></p>
+            </div>
+            <i class="fa fa-chevron-down pull-right toggle"></i>
+        </div>
+    </div>
+    <div id="task-dd-" class="task-item-content">
+        <div class="task-desc col-sm-12"></div>
+        <div class="task-content-control text-right">
+            <a type="button" class=" btn control-btn control-btn-del" onclick="delTask.call(this)">Delete
+            </a>
+            <button class=" btn control-btn control-btn-def" data-toggle="modal" data-target="#edit-task-modal"
+            onclick="editTask()">Edit
+            </button>
+        </div>
+    </div>
+</li><!--/Task Template-->
+
+    <!-- /.container-fluid -->
+
+    <!-- /#page-wrapper -->
+</div>
+<!-- /#wrapper -->
+<div id="edit-task-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content task-modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Task Edit</h4>
+            </div>
+            <div class="modal-body task-modal-body">
+                <form class="task-form col-sm-12" id="edit-task-form">
+                    <div class="task-content">
+                        <input type="text" class="form-control no-botom-border col-sm-12" id="task-title-input-edit"
+                               placeholder="Task name">
+                        <textarea class="form-control col-sm-12" placeholder="Task description"
+                                  id="task-desc-input-edit"></textarea>
+                    </div>
+                    <div class="task-meta">
+                        <div class="col-sm-5 datepicker">
+                            <div class='input-group date' id='datetimepicker-edit-task'>
+                                <div class="input-group-addon"><i class="fa fa-clock-o"></i></div>
+                                <input type='text' class="form-control" />
+                                    <span class="input-group-addon">
+                                                    <span class="fa fa-calendar"></span>
+                                    </span>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 assigned-to">
+                            <div class="input-group pull-right">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <select class="form-control" id="task-ass-user-select-edit">
+                                    <option value="No person assigned">Assign to</option>
+                                    <option value="Person 1">Person 1</option>
+                                    <option value="Person 2">Person 2</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <a type="submit" class=" btn control-btn control-btn-save"
+                               onclick="saveTask.call(this)">Save</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+
+<!-- JS -->
+<script src="js/libs/jquery.min.js"></script>
+<script src="js/libs/debounce.js"></script>
+<script src="js/libs/bootstrap.min.js"></script>
+<script src="js/libs/nprogress.js"></script>
+<script src="js/libs/jquery.storageapi.min.js"></script>
+<script src="js/libs/en-gb.js"></script>
+
+<script type="text/javascript" src="js/libs/moment.min.js"></script>
+<script type="text/javascript" src="js/libs/daterangepicker.js"></script>
+
+<script src="js/libs/loader.js"></script>
+<script src="js/dashboard-functions.js"></script>
+<script src="js/libs/bootstrap-datetimepicker.js"></script>
+<script src="js/customer-functions.js"></script>
+
+</body>
+</html>
