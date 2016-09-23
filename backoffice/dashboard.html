@@ -114,7 +114,7 @@
                     <a href="javascript:;" data-toggle="collapse" data-target="#usermngmnt-dd"><i class="fa fa-fw fa-group"></i> User Management <i class="fa fa-fw fa-caret-down"></i></a>
                     <ul id="usermngmnt-dd" class="collapse">
                         <li>
-                            <a href="#">Organisation</a>
+                            <a href="organisation.html">Organisation</a>
                         </li>
                         <li>
                             <a href="#">Team</a>
@@ -137,23 +137,20 @@
                     <a href="javascript:;" data-toggle="collapse" data-target="#admin-dd"><i
                             class="fa fa-fw fa-cog"></i> Admin <i class="fa fa-fw fa-caret-down"></i></a>
                     <ul id="admin-dd" class="collapse">
-                        <li>
-                            <a href="#">Organisation</a>
+                            <li>
+                            <a href="organisation.html">Organisation</a>
                         </li>
                         <li>
-                            <a href="#">Team</a>
+                            <a href="sites.html">Sites</a>
                         </li>
                         <li>
-                            <a href="#">Groups</a>
+                            <a href="departments.html">Departments</a>
                         </li>
                         <li>
-                            <a href="#">Roles</a>
+                            <a href="app-settings.html">App Settings</a>
                         </li>
                         <li>
-                            <a href="#">Permissions</a>
-                        </li>
-                        <li>
-                            <a href="#">Password policy</a>
+                            <a onclick="initBizHoursData()">Init Data*</a>
                         </li>
                     </ul>
                 </li>
@@ -188,17 +185,39 @@
             </ul>
         </li>
     </ul>
-
-    <!-- Page Wrapper -->
+   <!-- Page Wrapper -->
     <div id="page-wrapper">
-
         <!-- Message Section -->
-        <section class="message-section ">
-        </section><!-- /Message Section -->
-
+        <section class="message-section">
+            <div class="container-fluid">
+                <div class="row">
+                    <a href="" class="show-help">Show help</a>
+                </div>
+            </div>
+        </section>
+        <!-- /Message Section -->
         <!-- Main Section -->
+        <section class="main-section">
+
+            <div class="page-header">
+
+
+                <div class="col-md-8">
+                    <h4 class="page-name">Dashboard</h4>
+
+                    <ol class="breadcrumb">
+                        <li><a href="#">CustomerIQ</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                    </ol>
+
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
         <div class="titler">
-          <div>My Dashboard</div><div class="holder"><input id="ranger"></input></div>
+          <div></div><div class="holder"><input id="ranger"></input></div>
         </div>
        <div class="dashboard-wrapper">
          <div class="row">
@@ -306,6 +325,11 @@
          </div>
        </div>
        <!-- /Main Section -->
+        <!-- Info Section -->
+        <section class="info-section">
+            <div class="copy-right text-right">CustomerIQ - 2016 Copyright</div>
+        </section>
+        <!-- /Info Section -->
 
     </div>
     <!-- /.container-fluid -->

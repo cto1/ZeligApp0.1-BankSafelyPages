@@ -47,9 +47,9 @@ function drawPieChart() {
 
   var data = google.visualization.arrayToDataTable([
     ['Task', 'Hours per Day'],
-    ['Verified',     30],
-    ['Not Verified',      20],
-    ['Missing Info',  22]
+    ['Verified',     1030],
+    ['Not Verified',      89],
+    ['Missing Info',  21]
   ]);
 
   var options = {
